@@ -1,0 +1,2120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Master Career & Academic Map V2</title>
+<style>
+:root{
+  --bg:#f8fafc; --card:#ffffff; --text:#0f172a; --muted:#64748b;
+  --line:#cbd5e1; --career:#2563eb; --academic:#7c3aed; --story:#059669;
+}
+*{box-sizing:border-box}
+body{margin:0;padding:24px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text)}
+.container{max-width:1500px;margin:auto;background:var(--card);padding:28px;border-radius:14px;box-shadow:0 4px 20px rgba(15,23,42,.08)}
+h1{margin:0 0 6px}.subtitle{color:var(--muted);margin:0 0 20px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+button{border:1px solid var(--line);background:#fff;padding:8px 13px;border-radius:8px;cursor:pointer;font-weight:600}
+button:hover{background:#f1f5f9}
+details{margin:7px 0 7px 20px;border-left:2px solid #e2e8f0;padding-left:12px}
+summary{cursor:pointer;padding:8px 10px;border-radius:8px;font-weight:650;list-style-position:outside}
+summary:hover{background:#f1f5f9}
+.section>summary{font-size:1.08rem;color:var(--career)}
+.academic>summary{color:var(--academic)}
+.story>summary{color:var(--story)}
+.content{padding:5px 12px 12px 16px;color:#334155}
+ul{margin:6px 0 10px 20px;padding:0}li{margin:5px 0}
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:10px 0}
+.flow span{background:#eff6ff;border:1px solid #bfdbfe;padding:7px 10px;border-radius:8px;font-weight:600}
+.flow b{color:#94a3b8}
+.label{font-weight:700;color:#334155;margin:12px 0 5px}
+.note{background:#f8fafc;border:1px solid #e2e8f0;border-radius:9px;padding:10px 12px;margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin:10px 0}
+.box{border:1px solid #e2e8f0;border-radius:9px;padding:10px;background:#fff}
+.box strong{display:block;margin-bottom:5px}
+.badges{display:flex;flex-wrap:wrap;gap:7px}.badge{background:#ecfdf5;color:#047857;border:1px solid #a7f3d0;border-radius:999px;padding:5px 9px;font-size:.9rem}
+@media(max-width:700px){body{padding:10px}.container{padding:18px}details{margin-left:8px}.flow{align-items:flex-start;flex-direction:column}.flow b{transform:rotate(90deg);margin-left:18px}}
+
+.ml-flow{
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  margin:14px 0;
+}
+
+.ml-row{
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:9px;
+}
+
+.ml-step{
+  padding:9px 13px;
+  border:1px solid #bfdbfe;
+  border-radius:10px;
+  background:#eff6ff;
+  color:#1e3a5f;
+  font-weight:650;
+  text-align:center;
+}
+
+.ml-decision{
+  padding:9px 13px;
+  border:2px solid #f59e0b;
+  border-radius:10px;
+  background:#fffbeb;
+  color:#92400e;
+  font-weight:700;
+  text-align:center;
+}
+
+.ml-action{
+  padding:9px 13px;
+  border:1px solid #a7f3d0;
+  border-radius:10px;
+  background:#ecfdf5;
+  color:#065f46;
+  font-weight:650;
+  text-align:center;
+}
+
+.ml-warning{
+  padding:9px 13px;
+  border:1px solid #fecaca;
+  border-radius:10px;
+  background:#fef2f2;
+  color:#991b1b;
+  font-weight:650;
+  text-align:center;
+}
+
+.ml-arrow{
+  color:#94a3b8;
+  font-size:20px;
+  font-weight:700;
+}
+
+.ml-branch{
+  margin-left:32px;
+  padding-left:18px;
+  border-left:3px solid #e2e8f0;
+}
+
+.ml-label{
+  min-width:75px;
+  color:#64748b;
+  font-weight:700;
+}
+
+@media(max-width:700px){
+  .ml-row{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .ml-arrow{
+    transform:rotate(90deg);
+    margin-left:28px;
+  }
+
+  .ml-branch{
+    margin-left:12px;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Master Career & Academic Map</h1>
+<p class="subtitle">Career facts, academic background, competencies, technologies, and expandable interview stories.</p>
+<div class="toolbar">
+  <button onclick="setAll(true)">Expand all</button>
+  <button onclick="setAll(false)">Collapse all</button>
+  <button onclick="resetView()">Reset view</button>
+</div>
+
+<details class="section" open>
+<summary>Career</summary>
+
+<details open>
+<summary>Ralph Lauren Corporation</summary>
+
+<details><summary>Ownership</summary><div class="content">
+<ul><li>Range Plan VBA Toolbox</li><li>Dataiku Allocation Web App</li><li>End-to-End Allocation Pipeline</li></ul>
+</div></details>
+
+<details class="story" open><summary>Detailed Data Lineage</summary><div class="content">
+<div class="label">Trigger</div><div class="note">Business user reports incorrect figures, missing data, or a failed business validation.</div>
+<div class="label">Investigation path</div>
+<div class="flow"><span>VBA Toolbox Report</span><b>→</b><span>Server Data Dump</span><b>→</b><span>Dataiku Dataset</span><b>→</b><span>Dataiku Recipe (Python)</span><b>→</b><span>MicroStrategy SQL</span><b>→</b><span>Redshift Tables</span></div>
+<div class="label">Typical checks</div><ul><li>Row-count and output reconciliation</li><li>Schema and field verification</li><li>Transformation and calculation-logic review</li><li>Upstream/downstream dependency tracing</li><li>Root-cause identification and production-fix validation</li></ul>
+</div></details>
+
+<details open><summary>Scope</summary><div class="content">
+<ul><li><strong>Production Support - Keep critical systems running</strong></li><li><strong>Data Lineage Investigation</strong></li><li><strong>Impact Analysis</strong></li><li><strong>Data Quality Validation</strong></li><li><strong>Stakeholder Engagement across APAC and EU teams</strong></li></ul>
+</div></details>
+
+<details class="story" open><summary>Signature Stories</summary>
+
+<details><summary>1. GPH Global System Change</summary><div class="content">
+<div class="label">Context</div><div class="note">A global GPH system or schema change could affect several connected tools, pipelines, reports and downstream business processes.</div>
+<div class="label">Impact scope</div><ul><li>Range Plan VBA Toolbox and embedded business logic</li><li>Dataiku datasets, recipes and allocation pipeline</li><li>MicroStrategy reports and generated SQL</li><li>Redshift source tables and downstream reporting</li></ul>
+<div class="label">Actions</div><ul><li>Traced system dependencies before the change</li><li>Reviewed existing business and calculation logic</li><li>Refactored affected VBA modules</li><li>Modified Dataiku recipes and SQL logic where required</li><li>Supported SIT and UAT</li><li>Validated production outputs after rollout</li></ul>
+<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">Impact Analysis</span><span class="badge">Dependency Mapping</span><span class="badge">Change Management</span><span class="badge">Testing</span><span class="badge">Release Validation</span></div>
+</div></details>
+
+<details><summary>2. Wrong-data Investigation</summary><div class="content">
+<div class="label">Trigger</div><div class="note">A user reported incorrect figures in a VBA report or dashboard, and business validation did not pass.</div>
+<div class="label">Symptoms</div><ul><li>Report totals or dashboard figures did not match expectations</li><li>Data could be missing, incorrectly mapped, or transformed with outdated logic</li></ul>
+<div class="label">Investigation</div>
+<div class="flow"><span>VBA Output</span><b>→</b><span>Data Dump</span><b>→</b><span>Dataiku Dataset</span><b>→</b><span>Python Recipe</span><b>→</b><span>MicroStrategy SQL</span><b>→</b><span>Redshift</span></div>
+<div class="label">Actions</div><ul><li>Compared values across each stage of the data flow</li><li>Verified schemas, mappings and transformation logic</li><li>Reviewed the SQL generated through MicroStrategy</li><li>Located the affected function, recipe, query or source field</li><li>Applied or coordinated the fix and reran validation</li></ul>
+<div class="label">Validation</div><ul><li>Reconciled corrected outputs</li><li>Verified report and dashboard results</li><li>Confirmed the production result with users</li></ul>
+<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">Data Lineage</span><span class="badge">Root Cause Analysis</span><span class="badge">SQL Investigation</span><span class="badge">Production Support</span><span class="badge">Data Quality</span></div>
+</div></details>
+
+<details><summary>3. Dynamic UI Enhancement</summary><div class="content">
+<div class="label">Context</div><div class="note">The existing VBA reports were static, while users needed more flexible analysis across metrics and business hierarchies.</div>
+<div class="label">Actions</div><ul><li>Reviewed the limitation of the static reporting interface</li><li>Designed dynamic UI controls and filter behaviour</li><li>Added metric selection</li><li>Added market and market-group grouping</li><li>Added unit-type selection and related business logic</li><li>Updated, tested and deployed the VBA Toolbox</li></ul>
+<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">VBA Development</span><span class="badge">UI Development</span><span class="badge">Business Analysis</span><span class="badge">Requirements Gathering</span><span class="badge">Product Enhancement</span></div>
+</div></details>
+
+<details><summary>4. Allocation Logic Enhancement</summary><div class="content">
+<div class="label">Context</div><div class="note">Business requirements changed and the existing allocation logic or Dataiku application required updates.</div>
+<div class="label">Actions</div><ul><li>Gathered and clarified business requirements</li><li>Reviewed existing allocation rules and calculations</li><li>Modified Dataiku recipes and calculation fields</li><li>Validated downstream outputs and reconciled results</li><li>Supported UAT and change delivery</li></ul>
+<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">Business Analysis</span><span class="badge">Dataiku Development</span><span class="badge">Data Validation</span><span class="badge">Change Delivery</span></div>
+</div></details>
+
+<details><summary>5. Production Incident Resolution</summary><div class="content">
+<div class="label">Typical incidents</div><ul><li>Scheduled Dataiku data-dump workflow failed</li><li>VBA add-in or Toolbox crashed for users</li><li>A function or module generated an error</li><li>A production output interrupted a business workflow</li></ul>
+<div class="label">Support activities</div><ul><li>Received and reviewed error reports and user descriptions</li><li>Performed initial triage and categorised the incident</li><li>Investigated logs, functions, modules, recipes and data outputs</li><li>Handled L1 user support, L2 technical investigation and L3 root-cause work</li><li>Applied fixes, reran processes and validated results</li><li>Tracked bugs and documented resolutions</li><li>Led or supported weekly technical review meetings covering incidents, root causes and fixes</li></ul>
+<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">Incident Management</span><span class="badge">L1/L2/L3 Support</span><span class="badge">Technical Communication</span><span class="badge">Bug Tracking</span><span class="badge">Operational Governance</span></div>
+</div></details>
+
+<details><summary>Technology</summary><div class="content">
+<div class="grid">
+<div class="box"><strong>VBA</strong>Toolbox UI development, legacy-code refactoring, bug fixes, feature enhancement</div>
+<div class="box"><strong>SQL</strong>MicroStrategy-generated SQL, query investigation, schema modification, validation queries</div>
+<div class="box"><strong>Python</strong>Dataiku recipes, ETL logic, transformations and business calculations</div>
+<div class="box"><strong>HTML / JavaScript</strong>Dataiku Web App UI and front-end logic</div>
+<div class="box"><strong>Platforms</strong>Dataiku DSS, MicroStrategy and Redshift</div>
+</div></div></details>
+
+<details class="story" open>
+
+  <summary>Scope → Story Mapping</summary>
+
+<div class="content">
+
+<ul>
+
+<li>
+<strong>Production Support</strong>
+<ul>
+<li>Production Incident Resolution</li>
+<li>Wrong-data Investigation</li>
+</ul>
+</li>
+
+<li>
+<strong>Data Lineage Investigation</strong>
+<ul>
+<li>Wrong-data Investigation</li>
+</ul>
+</li>
+
+<li>
+<strong>Impact Analysis</strong>
+<ul>
+<li>GPH Global System Change</li>
+</ul>
+</li>
+
+<li>
+<strong>Data Quality Validation</strong>
+<ul>
+<li>Wrong-data Investigation</li>
+<li>Allocation Logic Enhancement</li>
+<li>GPH Global System Change</li>
+</ul>
+</li>
+
+<li>
+<strong>Stakeholder Engagement</strong>
+<ul>
+<li>Dynamic UI Enhancement</li>
+<li>Allocation Logic Enhancement</li>
+<li>GPH Global System Change</li>
+</ul>
+</li>
+
+</ul>
+
+</div>
+</details>
+
+</details>
+</details>
+
+<details open>
+  <summary>FWD Insurance</summary>
+
+  <details open>
+    <summary>Professional Nature Mapping</summary>
+
+    <details open>
+      <summary>Business Analysis</summary>
+      <div class="content">
+        <ul>
+          <li>Requirements Gathering</li>
+          <li>Stakeholder Management</li>
+          <li>Solution Design</li>
+          <li>UAT</li>
+          <li>Training</li>
+          <li>Documentation</li>
+          <li>Change Delivery</li>
+        </ul>
+        <div class="note">
+          Interview Story → Insurance Prototype Delivery
+        </div>
+      </div>
+    </details>
+
+    <details open>
+      <summary>Data Governance</summary>
+      <div class="content">
+        <ul>
+          <li>SSOT Creation</li>
+          <li>Data Standardisation</li>
+          <li>Data Quality Validation</li>
+          <li>Business Rule Definition</li>
+          <li>Data Consolidation</li>
+          <li>Trusted Data Source</li>
+        </ul>
+        <div class="note">
+          Interview Story → SSOT Creation
+        </div>
+      </div>
+    </details>
+
+    <details open>
+      <summary>Data Modelling</summary>
+      <div class="content">
+        <ul>
+          <li>Data Mapping</li>
+          <li>Source-to-Target Mapping</li>
+          <li>Entity Relationships</li>
+          <li>Join Logic Design</li>
+          <li>Business Data Structures</li>
+          <li>Practical Data Modelling</li>
+        </ul>
+        <div class="note">
+          Interview Story → Commission Data Integration Model
+        </div>
+      </div>
+    </details>
+
+    <details open>
+      <summary>Data Flow Design & Automation</summary>
+      <div class="content">
+        <ul>
+          <li>Data Flow Design</li>
+          <li>ETL</li>
+          <li>Automation</li>
+          <li>Data Integration</li>
+          <li>Data Transformation</li>
+          <li>Output Distribution</li>
+        </ul>
+        <div class="note">
+          Interview Story → End-to-End Commission Pipeline
+        </div>
+      </div>
+    </details>
+
+  </details>
+
+  <details open>
+    <summary>Technology Stack</summary>
+
+    <div class="grid">
+
+      <div class="box">
+        <strong>VBA</strong>
+        Data Collection, Process Automation, File Distribution
+      </div>
+
+      <div class="box">
+        <strong>Power Query</strong>
+        Data Integration, Data Mapping, Table Relationships
+      </div>
+
+      <div class="box">
+        <strong>M Code</strong>
+        Data Transformation, ETL Logic, Data Standardisation
+      </div>
+
+      <div class="box">
+        <strong>DAX</strong>
+        Business Rules, Calculated Fields, Semantic Layer
+      </div>
+
+      <div class="box">
+        <strong>SQL</strong>
+        Data Validation, Query Analysis, Data Investigation
+      </div>
+
+      <div class="box">
+        <strong>SSOT</strong>
+        Data Governance, Trusted Dataset, Controlled Reporting
+      </div>
+
+    </div>
+  </details>
+
+  <details class="story" open>
+    <summary>Story 1 - Insurance Prototype Delivery</summary>
+
+    <div class="content">
+
+      <div class="label">Nature</div>
+      <div class="note">Business Analysis</div>
+
+      <div class="label">Situation</div>
+      <div class="note">
+        Business users relied on manual insurance commission processes and spreadsheet-based workflows.
+      </div>
+
+      <div class="label">Delivery Flow</div>
+
+      <div class="flow">
+        <span>Requirements Gathering</span>
+        <b>→</b>
+        <span>Process Analysis</span>
+        <b>→</b>
+        <span>Solution Blueprint</span>
+        <b>→</b>
+        <span>Prototype Development</span>
+        <b>→</b>
+        <span>Testing</span>
+        <b>→</b>
+        <span>UAT</span>
+        <b>→</b>
+        <span>Training</span>
+        <b>→</b>
+        <span>Deployment</span>
+      </div>
+
+      <div class="label">Skills Demonstrated</div>
+
+      <div class="badges">
+        <span class="badge">Business Analysis</span>
+        <span class="badge">Requirements Gathering</span>
+        <span class="badge">Solution Design</span>
+        <span class="badge">Stakeholder Management</span>
+        <span class="badge">UAT</span>
+        <span class="badge">Training</span>
+      </div>
+
+    </div>
+  </details>
+
+  <details class="story" open>
+    <summary>Story 2 - SSOT Creation</summary>
+
+    <div class="content">
+
+      <div class="label">Nature</div>
+      <div class="note">Data Governance</div>
+
+      <div class="label">Situation</div>
+      <div class="note">
+        Data existed across multiple files and manual processes.
+        Different structures and definitions produced inconsistent outputs.
+      </div>
+
+      <div class="label">Governance Flow</div>
+
+      <div class="flow">
+        <span>Identify Sources</span>
+        <b>→</b>
+        <span>Consolidate Data</span>
+        <b>→</b>
+        <span>Standardise Structures</span>
+        <b>→</b>
+        <span>Define Business Rules</span>
+        <b>→</b>
+        <span>Validate Data Quality</span>
+        <b>→</b>
+        <span>Create SSOT</span>
+      </div>
+
+      <div class="label">Governance Activities</div>
+
+      <ul>
+        <li>Data Standardisation</li>
+        <li>Data Quality Validation</li>
+        <li>Business Rule Definition</li>
+        <li>Data Consolidation</li>
+        <li>Trusted Data Source Establishment</li>
+        <li>Output Consistency Controls</li>
+      </ul>
+
+      <div class="label">Skills Demonstrated</div>
+
+      <div class="badges">
+        <span class="badge">Data Governance</span>
+        <span class="badge">SSOT Design</span>
+        <span class="badge">Data Quality</span>
+        <span class="badge">Business Rules</span>
+        <span class="badge">Data Standardisation</span>
+      </div>
+
+    </div>
+  </details>
+
+  <details class="story" open>
+    <summary>Story 3 - Commission Data Integration Model</summary>
+
+    <div class="content">
+
+      <div class="label">Nature</div>
+      <div class="note">Data Modelling</div>
+
+      <div class="label">Business Structure</div>
+
+      <div class="flow">
+        <span>Policy</span>
+        <b>→</b>
+        <span>Policy ID</span>
+        <b>→</b>
+        <span>Commission Records</span>
+        <b>→</b>
+        <span>Agent ID</span>
+        <b>→</b>
+        <span>Agent Master</span>
+      </div>
+
+      <div class="label">Modelling Flow</div>
+
+      <div class="flow">
+        <span>Business Entities</span>
+        <b>→</b>
+        <span>Business Keys</span>
+        <b>→</b>
+        <span>Relationships</span>
+        <b>→</b>
+        <span>Data Mapping</span>
+        <b>→</b>
+        <span>Business Rules</span>
+        <b>→</b>
+        <span>Reporting Dataset</span>
+      </div>
+
+      <div class="label">Data Modelling Concepts</div>
+
+      <ul>
+        <li>Entity Relationships</li>
+        <li>Data Mapping</li>
+        <li>Source-to-Target Mapping</li>
+        <li>Join Logic Design</li>
+        <li>Business Data Structures</li>
+      </ul>
+
+      <div class="label">Skills Demonstrated</div>
+
+      <div class="badges">
+        <span class="badge">Data Modelling</span>
+        <span class="badge">Data Mapping</span>
+        <span class="badge">Source-to-Target Mapping</span>
+        <span class="badge">Join Logic</span>
+        <span class="badge">Business Rules</span>
+      </div>
+
+    </div>
+  </details>
+
+  <details class="story" open>
+    <summary>Story 4 - End-to-End Commission Pipeline</summary>
+
+    <div class="content">
+
+      <div class="label">Nature</div>
+      <div class="note">Data Flow Design & Automation</div>
+
+      <div class="label">Pipeline</div>
+
+      <div class="flow">
+        <span>Source Files</span>
+        <b>→</b>
+        <span>VBA Collection</span>
+        <b>→</b>
+        <span>Power Query Integration</span>
+        <b>→</b>
+        <span>Data Mapping</span>
+        <b>→</b>
+        <span>M Code Transformation</span>
+        <b>→</b>
+        <span>DAX Business Rules</span>
+        <b>→</b>
+        <span>SSOT Dataset</span>
+        <b>→</b>
+        <span>VBA Distribution</span>
+        <b>→</b>
+        <span>Business Users</span>
+      </div>
+
+      <div class="label">Modern Pipeline Layers</div>
+
+      <div class="flow">
+        <span>Ingestion</span>
+        <b>→</b>
+        <span>Integration</span>
+        <b>→</b>
+        <span>Transformation</span>
+        <b>→</b>
+        <span>Business Logic</span>
+        <b>→</b>
+        <span>Governance</span>
+        <b>→</b>
+        <span>Delivery</span>
+      </div>
+
+      <div class="label">Skills Demonstrated</div>
+
+      <div class="badges">
+        <span class="badge">Data Flow Design</span>
+        <span class="badge">ETL</span>
+        <span class="badge">Automation</span>
+        <span class="badge">Data Integration</span>
+        <span class="badge">Data Transformation</span>
+        <span class="badge">Reporting Delivery</span>
+      </div>
+
+    </div>
+  </details>
+
+  <details open>
+    <summary>Interview Mapping</summary>
+
+    <div class="content">
+
+      <ul>
+        <li><strong>DG Interview</strong> → Story 2</li>
+        <li><strong>Data Quality Interview</strong> → Story 2 + Story 4</li>
+        <li><strong>Data Model Interview</strong> → Story 3</li>
+        <li><strong>Data Governance Interview</strong> → Story 2 + Story 3</li>
+        <li><strong>Automation Interview</strong> → Story 4</li>
+        <li><strong>Analytics Engineer Interview</strong> → Story 4</li>
+        <li><strong>Business Analyst Interview</strong> → Story 1</li>
+        <li><strong>Transformation Interview</strong> → Story 1 + Story 4</li>
+      </ul>
+
+    </div>
+  </details>
+
+</details>
+
+<details open>
+  <summary>Uni-China (Market) Management Ltd.</summary>
+
+  <details open>
+    <summary>Ownership</summary>
+    <ul>
+      <li>Finance SSOT</li>
+      <li>Executive Dashboards</li>
+      <li>Forecast Automation Pipeline</li>
+    </ul>
+  </details>
+
+  <details open>
+    <summary>Professional Nature Mapping</summary>
+
+    <details open>
+      <summary>Financial Analytics</summary>
+      <div class="content">
+        <ul>
+          <li>FP&amp;A</li>
+          <li>Budgeting</li>
+          <li>Forecasting</li>
+          <li>Financial Analysis</li>
+          <li>Performance Monitoring</li>
+        </ul>
+        <div class="note">
+          Interview Story → Executive Dashboard Transformation
+        </div>
+      </div>
+    </details>
+
+    <details open>
+      <summary>Finance Data Governance</summary>
+      <div class="content">
+        <ul>
+          <li>Finance SSOT Creation</li>
+          <li>Data Consolidation</li>
+          <li>Data Standardisation</li>
+          <li>Finance Data Management</li>
+          <li>Data Quality Validation</li>
+        </ul>
+        <div class="note">
+          Interview Story → Finance SSOT Creation
+        </div>
+      </div>
+    </details>
+
+    <details open>
+      <summary>Data Transformation &amp; Automation</summary>
+      <div class="content">
+        <ul>
+          <li>Data Transformation</li>
+          <li>Forecast Automation</li>
+          <li>Data Preprocessing</li>
+          <li>Reporting Automation</li>
+          <li>VBA Automation</li>
+        </ul>
+        <div class="note">
+          Interview Story → Forecast Automation Pipeline
+        </div>
+      </div>
+    </details>
+
+    <details open>
+      <summary>Decision Support Analytics</summary>
+      <div class="content">
+        <ul>
+          <li>Executive Dashboard Development</li>
+          <li>Trend Analysis</li>
+          <li>KPI Monitoring</li>
+          <li>Management Reporting</li>
+          <li>Business Performance Analysis</li>
+        </ul>
+        <div class="note">
+          Interview Story → Executive Performance Reporting
+        </div>
+      </div>
+    </details>
+
+  </details>
+
+  <details open>
+    <summary>Technology Stack</summary>
+
+    <div class="grid">
+
+      <div class="box">
+        <strong>Excel</strong>
+        Financial Analysis, Data Consolidation, Management Reporting
+      </div>
+
+      <div class="box">
+        <strong>VBA</strong>
+        Forecast Automation, Reporting Automation, Workflow Optimisation
+      </div>
+
+      <div class="box">
+        <strong>Financial Modelling</strong>
+        Budgeting, Forecasting, Long-term Planning
+      </div>
+
+      <div class="box">
+        <strong>Dashboard Development</strong>
+        Executive Reporting, KPI Monitoring, Visual Analytics
+      </div>
+
+    </div>
+
+  </details>
+
+  <details class="story" open>
+    <summary>Story 1 - Finance SSOT Creation</summary>
+
+    <div class="content">
+
+      <div class="label">Nature</div>
+      <div class="note">Finance Data Governance</div>
+
+      <div class="label">Situation</div>
+      <div class="note">
+        Financial data was scattered across multiple business units,
+        systems and reporting files with inconsistent structures.
+      </div>
+
+      <div class="label">Transformation Flow</div>
+
+      <div class="flow">
+        <span>BU Data Sources</span>
+        <b>→</b>
+        <span>Data Collection</span>
+        <b>→</b>
+        <span>Data Cleaning</span>
+        <b>→</b>
+        <span>Data Standardisation</span>
+        <b>→</b>
+        <span>P&amp;L Transformation</span>
+        <b>→</b>
+        <span>Finance Database</span>
+        <b>→</b>
+        <span>Finance SSOT</span>
+      </div>
+
+      <div class="label">Skills Demonstrated</div>
+
+      <div class="badges">
+        <span class="badge">Finance Data Governance</span>
+        <span class="badge">Data Consolidation</span>
+        <span class="badge">Data Standardisation</span>
+        <span class="badge">SSOT Design</span>
+        <span class="badge">Data Quality Validation</span>
+      </div>
+
+    </div>
+
+  </details>
+
+  <details class="story" open>
+    <summary>Story 2 - Forecast Automation Pipeline</summary>
+
+    <div class="content">
+
+      <div class="label">Nature</div>
+      <div class="note">Data Transformation &amp; Automation</div>
+
+      <div class="flow">
+        <span>Accounting Data</span>
+        <b>→</b>
+        <span>Collection</span>
+        <b>→</b>
+        <span>Preprocessing</span>
+        <b>→</b>
+        <span>Transformation</span>
+        <b>→</b>
+        <span>Financial Calculations</span>
+        <b>→</b>
+        <span>Forecast Logic</span>
+        <b>→</b>
+        <span>Automated Reporting</span>
+      </div>
+
+      <div class="label">Skills Demonstrated</div>
+
+      <div class="badges">
+        <span class="badge">VBA Automation</span>
+        <span class="badge">Data Transformation</span>
+        <span class="badge">Forecasting</span>
+        <span class="badge">Financial Modelling</span>
+        <span class="badge">Reporting Automation</span>
+      </div>
+
+    </div>
+
+  </details>
+
+  <details class="story" open>
+    <summary>Story 3 - Executive Dashboard Transformation</summary>
+
+    <div class="content">
+
+      <div class="label">Nature</div>
+      <div class="note">Decision Support Analytics</div>
+
+      <div class="flow">
+        <span>Raw Finance Data</span>
+        <b>→</b>
+        <span>Transformation</span>
+        <b>→</b>
+        <span>Analysis</span>
+        <b>→</b>
+        <span>Visualisation</span>
+        <b>→</b>
+        <span>Executive Dashboard</span>
+        <b>→</b>
+        <span>Business Decisions</span>
+      </div>
+
+      <div class="label">Skills Demonstrated</div>
+
+      <div class="badges">
+        <span class="badge">Dashboard Development</span>
+        <span class="badge">Data Visualisation</span>
+        <span class="badge">Business Intelligence</span>
+        <span class="badge">Executive Reporting</span>
+        <span class="badge">Decision Support</span>
+      </div>
+
+    </div>
+
+  </details>
+
+  <details open>
+    <summary>Interview Mapping</summary>
+
+    <div class="content">
+
+      <ul>
+
+        <li>
+          <strong>FP&amp;A Interview</strong>
+          → Story 1 + Story 2
+        </li>
+
+        <li>
+          <strong>Forecasting Interview</strong>
+          → Story 2
+        </li>
+
+        <li>
+          <strong>Dashboard / BI Interview</strong>
+          → Story 3
+        </li>
+
+        <li>
+          <strong>Finance Analytics Interview</strong>
+          → Story 2 + Story 3
+        </li>
+
+        <li>
+          <strong>Data Governance Interview</strong>
+          → Story 1
+        </li>
+
+        <li>
+          <strong>Transformation Interview</strong>
+          → Story 1 + Story 2 + Story 3
+        </li>
+
+      </ul>
+
+    </div>
+
+  </details>
+
+</details>
+
+</details>
+
+<details class="section academic" open>
+<summary>Academic</summary>
+
+<details open>
+  <summary>Master of Data Science</summary>
+
+  <details open>
+    <summary>Skill & Technology Retrieval Index</summary>
+
+    <details open>
+      <summary>R & Statistical Analysis</summary>
+      <div class="content">
+
+        <div class="label">Related Modules</div>
+        <ul>
+          <li>Fundamental of Data Science — To Verify</li>
+          <li>Machine Learning and Data Analytics — To Verify</li>
+        </ul>
+
+        <div class="label">Evidence</div>
+        <ul>
+          <li>Credit Card Fraud Detection</li>
+          <li>Banking Technology & Cybersecurity Research</li>
+        </ul>
+
+        <div class="label">Techniques</div>
+        <ul>
+          <li>Exploratory Data Analysis</li>
+          <li>Statistical Analysis</li>
+          <li>Data Visualisation with ggplot</li>
+          <li>Classification Model Comparison</li>
+        </ul>
+
+        <div class="label">Career Relevance</div>
+        <ul>
+          <li>Statistical Analyst</li>
+          <li>Risk Analytics</li>
+          <li>Applied Data Science</li>
+        </ul>
+
+      </div>
+    </details>
+
+    <details open>
+      <summary>Fraud Detection & Imbalanced Learning</summary>
+      <div class="content">
+
+        <div class="label">Related Modules</div>
+        <ul>
+          <li>Machine Learning and Data Analytics — Likely</li>
+          <li>Fundamental of Data Science — To Verify</li>
+        </ul>
+
+        <div class="label">Evidence</div>
+        <ul>
+          <li>Credit Card Fraud Detection Project</li>
+        </ul>
+
+        <div class="label">What I Did</div>
+        <ul>
+          <li>Transaction Data Analysis</li>
+          <li>Exploratory Data Analysis</li>
+          <li>Train / Test Split</li>
+          <li>Class-Imbalance Handling</li>
+          <li>Logistic Regression</li>
+          <li>Random Forest</li>
+          <li>Neural Network</li>
+        </ul>
+
+        <div class="label">Model Evaluation</div>
+        <ul>
+          <li>Precision</li>
+          <li>Recall</li>
+          <li>Accuracy</li>
+          <li>Confusion Matrix</li>
+        </ul>
+
+        <div class="label">Career Relevance</div>
+        <ul>
+          <li>Fraud Analytics</li>
+          <li>Financial Crime Analytics</li>
+          <li>Operational Risk Analytics</li>
+          <li>BFSI Data Science</li>
+        </ul>
+
+      </div>
+    </details>
+
+    <details open>
+      <summary>Outlier & Anomaly Detection</summary>
+      <div class="content">
+
+        <div class="label">Related Modules</div>
+        <ul>
+          <li>Fundamental of Data Science — Likely</li>
+          <li>Machine Learning and Data Analytics — Likely</li>
+        </ul>
+
+        <div class="label">Evidence</div>
+        <ul>
+          <li>Credit Risk Prediction Data Product</li>
+          <li>Credit Card Fraud Detection</li>
+          <li>Data Quality Investigations from Career Experience</li>
+        </ul>
+
+        <div class="label">Relevant Techniques</div>
+        <ul>
+          <li>Outlier Identification</li>
+          <li>Distribution Analysis</li>
+          <li>Data Validation</li>
+          <li>Fraud Pattern Detection</li>
+          <li>Flagging High-Risk Observations</li>
+        </ul>
+
+        <div class="label">Interview Translation</div>
+        <ul>
+          <li>Identify unusual records for further investigation</li>
+          <li>Combine statistical flags with business rules</li>
+          <li>Validate whether anomalies represent errors or genuine risk</li>
+        </ul>
+
+      </div>
+    </details>
+
+    <details open>
+      <summary>Predictive Modelling & XGBoost</summary>
+      <div class="content">
+
+        <div class="label">Related Modules</div>
+        <ul>
+          <li>Machine Learning and Data Analytics — Likely</li>
+          <li>Data Product Development — Likely</li>
+          <li>Dissertation / FYP</li>
+        </ul>
+
+        <div class="label">Evidence</div>
+        <ul>
+          <li>Credit Risk Prediction Data Product</li>
+        </ul>
+
+        <div class="label">Models</div>
+        <ul>
+          <li>Logistic Regression</li>
+          <li>XGBoost</li>
+          <li>Random Forest</li>
+          <li>Gradient Boosting</li>
+          <li>CNN-LSTM-AM</li>
+        </ul>
+
+        <div class="label">Workflow</div>
+        <div class="flow">
+          <span>Data Preparation</span>
+          <b>→</b>
+          <span>Outlier Handling</span>
+          <b>→</b>
+          <span>Feature Engineering</span>
+          <b>→</b>
+          <span>Encoding</span>
+          <b>→</b>
+          <span>Model Training</span>
+          <b>→</b>
+          <span>Evaluation</span>
+          <b>→</b>
+          <span>Tableau Dashboard</span>
+        </div>
+
+        <div class="label">Career Relevance</div>
+        <ul>
+          <li>Credit Risk Analytics</li>
+          <li>BFSI Data Science</li>
+          <li>Applied Data Science</li>
+          <li>Predictive Decision Support</li>
+        </ul>
+
+      </div>
+    </details>
+
+    <details open>
+      <summary>Feature Engineering</summary>
+      <div class="content">
+
+        <div class="label">Related Modules</div>
+        <ul>
+          <li>Machine Learning and Data Analytics — Likely</li>
+          <li>Fundamental of Data Science — To Verify</li>
+          <li>Dissertation / FYP</li>
+        </ul>
+
+        <div class="label">Evidence</div>
+        <ul>
+          <li>Credit Risk Prediction</li>
+          <li>Tweet Classification</li>
+        </ul>
+
+        <div class="label">Examples</div>
+        <ul>
+          <li>Encoding Categorical Variables</li>
+          <li>Handling Missing Values</li>
+          <li>Outlier Handling</li>
+          <li>Creating Model-ready Features</li>
+          <li>TF-IDF Text Feature Extraction</li>
+        </ul>
+
+      </div>
+    </details>
+
+    <details open>
+      <summary>Model Evaluation</summary>
+      <div class="content">
+
+        <div class="label">Related Modules</div>
+        <ul>
+          <li>Machine Learning and Data Analytics — Likely</li>
+          <li>Dissertation / FYP</li>
+        </ul>
+
+        <div class="label">Classification Metrics</div>
+        <ul>
+          <li>Accuracy</li>
+          <li>Precision</li>
+          <li>Recall</li>
+          <li>F1-score</li>
+          <li>AUC-ROC</li>
+          <li>Confusion Matrix</li>
+        </ul>
+
+        <div class="label">Regression Metrics</div>
+        <ul>
+          <li>Mean Squared Error</li>
+        </ul>
+
+        <div class="label">Evidence</div>
+        <ul>
+          <li>Credit Risk Prediction</li>
+          <li>Credit Card Fraud Detection</li>
+          <li>Tweet Classification</li>
+        </ul>
+
+      </div>
+    </details>
+
+    <details open>
+      <summary>NLP & Sentiment Analysis</summary>
+      <div class="content">
+
+        <div class="label">Related Modules</div>
+        <ul>
+          <li>Machine Learning and Data Analytics — Likely</li>
+          <li>BSc Artificial Intelligence and Its Applications</li>
+        </ul>
+
+        <div class="label">Evidence</div>
+        <ul>
+          <li>Tweet Classification Project</li>
+          <li>Potential CS Final Project Reuse</li>
+        </ul>
+
+        <div class="label">NLP Pipeline</div>
+        <div class="flow">
+          <span>Raw Text</span>
+          <b>→</b>
+          <span>Text Cleaning</span>
+          <b>→</b>
+          <span>Tokenisation</span>
+          <b>→</b>
+          <span>Stop-word Removal</span>
+          <b>→</b>
+          <span>TF-IDF</span>
+          <b>→</b>
+          <span>Classification</span>
+          <b>→</b>
+          <span>Evaluation</span>
+        </div>
+
+        <div class="label">Models & Tools</div>
+        <ul>
+          <li>Python</li>
+          <li>Scikit-learn</li>
+          <li>NLTK</li>
+          <li>Naive Bayes</li>
+          <li>Support Vector Machine</li>
+          <li>Logistic Regression</li>
+        </ul>
+
+        <div class="label">Career / Project Reuse</div>
+        <ul>
+          <li>Sentiment Analysis</li>
+          <li>Text Classification</li>
+          <li>Customer Feedback Analytics</li>
+          <li>CS Final AI Portfolio</li>
+        </ul>
+
+      </div>
+    </details>
+
+    <details open>
+      <summary>Data Products & Visual Analytics</summary>
+      <div class="content">
+
+        <div class="label">Related Modules</div>
+        <ul>
+          <li>Data Product Development — Likely</li>
+          <li>Dissertation / FYP</li>
+        </ul>
+
+        <div class="label">Evidence</div>
+        <ul>
+          <li>Credit Risk Prediction Data Product</li>
+          <li>Interactive Tableau Dashboard</li>
+        </ul>
+
+        <div class="label">Capabilities</div>
+        <ul>
+          <li>Model Output
+</details>
+
+<details open>
+<summary>Data Science & Analytics</summary>
+<div class="content">
+<ul>
+<li>EDA</li>
+<li>Feature Engineering</li>
+<li>Statistical Analysis</li>
+<li>Visual Analytics</li>
+</ul>
+</div>
+</details>
+
+</details>
+
+<details open>
+<summary>Technology Stack</summary>
+
+<ul>
+<li>Python</li>
+<li>R</li>
+<li>XGBoost</li>
+<li>Random Forest</li>
+<li>Logistic Regression</li>
+<li>NLP</li>
+<li>Tableau</li>
+<li>R Shiny</li>
+</ul>
+
+</details>
+
+<details class="story" open>
+<summary>FYP - Credit Risk Prediction Data Product</summary>
+
+<div class="content">
+
+<div class="label">Nature</div>
+<div class="note">Applied Data Science</div>
+
+<div class="flow">
+<span>Data Preparation</span>
+<b>→</b>
+<span>Feature Engineering</span>
+<b>→</b>
+<span>Prediction Models</span>
+<b>→</b>
+<span>Model Evaluation</span>
+<b>→</b>
+<span>Tableau Dashboard</span>
+<b>→</b>
+<span>Decision Support</span>
+</div>
+
+<div class="label">Skills Demonstrated</div>
+
+<div class="badges">
+<span class="badge">Machine Learning</span>
+<span class="badge">Predictive Analytics</span>
+<span class="badge">Anomaly Detection</span>
+<span class="badge">Feature Engineering</span>
+<span class="badge">Visual Analytics</span>
+</div>
+
+</div>
+
+</details>
+
+</details>
+
+<details class="story" open>
+  <summary>End-to-End Machine Learning Decision Flow</summary>
+
+  <div class="content">
+
+    <div class="label">1. Define the Problem</div>
+    <ul>
+      <li>What business decision will the model support?</li>
+      <li>What is the target variable?</li>
+      <li>Classification, Regression, Clustering or Anomaly Detection?</li>
+      <li>What is the cost of False Positive and False Negative?</li>
+    </ul>
+
+    <div class="label">2. Understand the Data</div>
+    <div class="flow">
+      <span>Data Collection</span>
+      <b>→</b>
+      <span>Target Definition</span>
+      <b>→</b>
+      <span>EDA</span>
+      <b>→</b>
+      <span>Data Quality Checks</span>
+    </div>
+
+    <ul>
+      <li>Check sample size, distributions and missing values</li>
+      <li>Check duplicates, outliers and inconsistent records</li>
+      <li>Check whether features would exist at prediction time</li>
+      <li>Remove data leakage before modelling</li>
+    </ul>
+
+    <div class="label">3. Decide the Validation Strategy</div>
+
+    <ul>
+      <li>
+        <strong>Random independent observations</strong>
+        → Random or stratified split
+      </li>
+
+      <li>
+        <strong>Imbalanced classification</strong>
+        → Stratified split to preserve class proportions
+      </li>
+
+      <li>
+        <strong>Time-dependent data</strong>
+        → Chronological split or TimeSeriesSplit
+      </li>
+
+      <li>
+        <strong>Repeated customers, policies or entities</strong>
+        → Group-based split to prevent leakage
+      </li>
+    </ul>
+
+    <div class="note">
+      Keep the final test set untouched until model selection and tuning are complete.
+      Use cross-validation on the training data for more reliable model comparison.
+    </div>
+
+    <div class="label">4. Decide Train / Validation / Test Allocation</div>
+
+    <ul>
+      <li>Larger dataset → smaller test proportion may still provide enough observations</li>
+      <li>Smaller dataset → use cross-validation to maximise training-data usage</li>
+      <li>Minority class → ensure validation and test sets contain enough positive cases</li>
+      <li>Set a random state when reproducible results are required</li>
+    </ul>
+
+    <div class="note">
+      There is no universal best split ratio. The decision depends on dataset size,
+      class distribution, grouping and time structure.
+    </div>
+
+    <div class="label">5. Build the Preprocessing Pipeline</div>
+
+    <div class="flow">
+      <span>Missing Values</span>
+      <b>→</b>
+      <span>Outliers</span>
+      <b>→</b>
+      <span>Encoding</span>
+      <b>→</b>
+      <span>Scaling</span>
+      <b>→</b>
+      <span>Feature Engineering</span>
+      <b>→</b>
+      <span>Feature Selection</span>
+    </div>
+
+    <div class="note">
+      Fit preprocessing steps using training data only, then apply the fitted
+      transformations to validation and test data.
+    </div>
+
+    <div class="label">6. Check Class Imbalance</div>
+
+    <ul>
+      <li>Inspect class counts and class proportions</li>
+      <li>Assess whether the minority class is the business-critical outcome</li>
+      <li>Do not rely on accuracy when the majority class dominates</li>
+    </ul>
+
+    <div class="label">Class-Imbalance Decision</div>
+
+    <ul>
+      <li>
+        <strong>Mild imbalance with sufficient minority observations</strong>
+        → Start with stratified validation and suitable metrics
+      </li>
+
+      <li>
+        <strong>Misclassification costs differ</strong>
+        → Use class weights or cost-sensitive learning
+      </li>
+
+      <li>
+        <strong>Minority class has too few training examples</strong>
+        → Consider oversampling or SMOTE on training folds only
+      </li>
+
+      <li>
+        <strong>Majority class is extremely large</strong>
+        → Consider careful undersampling
+      </li>
+
+      <li>
+        <strong>Operational workload matters</strong>
+        → Tune the decision threshold according to investigation capacity
+      </li>
+    </ul>
+
+    <div class="note">
+      Never rebalance the complete dataset before splitting.
+      Rebalancing must remain inside the training process to prevent leakage.
+    </div>
+
+    <div class="label">7. Establish a Baseline</div>
+
+    <div class="flow">
+      <span>Dummy Baseline</span>
+      <b>→</b>
+      <span>Simple Interpretable Model</span>
+      <b>→</b>
+      <span>Advanced Models</span>
+    </div>
+
+    <ul>
+      <li>Classification → Majority-class or rule-based baseline</li>
+      <li>Regression → Mean or median prediction baseline</li>
+      <li>Start with Logistic or Linear Regression where applicable</li>
+      <li>Only keep complex models if they provide meaningful improvement</li>
+    </ul>
+
+    <div class="label">8. Train and Compare Models</div>
+
+    <ul>
+      <li>Use the same cross-validation strategy for every candidate model</li>
+      <li>Compare mean performance and performance stability</li>
+      <li>Consider interpretability, latency and deployment constraints</li>
+    </ul>
+
+    <div class="label">9. Decide Whether to Tune</div>
+
+    <ul>
+      <li>
+        <strong>Baseline is weak</strong>
+        → Recheck data quality, features and problem definition before tuning
+      </li>
+
+      <li>
+        <strong>Training score high, validation score low</strong>
+        → Overfitting: simplify, regularise or obtain more data
+      </li>
+
+      <li>
+        <strong>Both scores low</strong>
+        → Underfitting: improve features or use a more suitable model
+      </li>
+
+      <li>
+        <strong>Model is promising and stable</strong>
+        → Tune hyperparameters using cross-validation
+      </li>
+    </ul>
+
+    <div class="note">
+      Hyperparameter tuning should improve a valid model.
+      It should not be used to hide weak data or poor feature design.
+    </div>
+
+    <div class="label">10. Select Evaluation Metrics</div>
+
+    <ul>
+      <li>
+        <strong>Balanced classification</strong>
+        → Accuracy, Precision, Recall and F1
+      </li>
+
+      <li>
+        <strong>Fraud / risk detection</strong>
+        → Recall, Precision, F1, PR-AUC and Confusion Matrix
+      </li>
+
+      <li>
+        <strong>Ranking across thresholds</strong>
+        → ROC-AUC or PR-AUC
+      </li>
+
+      <li>
+        <strong>Probability quality</strong>
+        → Calibration and probability-based metrics
+      </li>
+
+      <li>
+        <strong>Regression</strong>
+        → MAE, RMSE, MSE and R² according to business cost
+      </li>
+    </ul>
+
+    <div class="label">11. Tune the Decision Threshold</div>
+
+    <ul>
+      <li>Default 0.5 is not automatically the best business threshold</li>
+      <li>Lower threshold → usually more positives flagged and higher recall</li>
+      <li>Higher threshold → usually fewer alerts and higher precision</li>
+      <li>Select threshold using business cost, risk tolerance and review capacity</li>
+    </ul>
+
+    <div class="label">12. Final Model Decision</div>
+
+    <div class="flow">
+      <span>Technical Performance</span>
+      <b>+</b>
+      <span>Business Value</span>
+      <b>+</b>
+      <span>Interpretability</span>
+      <b>+</b>
+      <span>Operational Feasibility</span>
+      <b>→</b>
+      <span>Final Model</span>
+    </div>
+
+    <div class="label">13. Final Test and Error Analysis</div>
+
+    <ul>
+      <li>Evaluate once on the untouched test set</li>
+      <li>Review False Positives and False Negatives</li>
+      <li>Check performance across important customer or risk segments</li>
+      <li>Confirm whether the result meets the original business objective</li>
+    </ul>
+
+    <div class="label">14. Deployment and Monitoring</div>
+
+    <div class="flow">
+      <span>Model Output</span>
+      <b>→</b>
+      <span>Dashboard / API / Batch Process</span>
+      <b>→</b>
+      <span>Business Decision</span>
+      <b>→</b>
+      <span>Monitoring</span>
+      <b>→</b>
+      <span>Retraining</span>
+    </div>
+
+    <ul>
+      <li>Monitor data quality and feature drift</li>
+      <li>Monitor prediction and business performance</li>
+      <li>Review threshold suitability</li>
+      <li>Retrain when data patterns or business requirements change</li>
+    </ul>
+
+  </div>
+</details>
+
+<details class="story" open>
+  <summary>Machine Learning Flow Memory Anchor</summary>
+
+  <div class="content">
+
+    <div class="ml-flow">
+
+      <!-- Problem -->
+      <div class="ml-row">
+        <div class="ml-step">Business Problem</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-decision">Problem Type?</div>
+      </div>
+
+      <div class="ml-branch">
+
+        <div class="ml-row">
+          <div class="ml-label">Numeric</div>
+          <div class="ml-action">Regression</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Category</div>
+          <div class="ml-action">Classification</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">No Label</div>
+          <div class="ml-action">Clustering / Anomaly Detection</div>
+        </div>
+
+      </div>
+
+      <!-- Data preparation -->
+      <div class="ml-row">
+        <div class="ml-step">Data Preparation</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-step">EDA</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-decision">Data Quality OK?</div>
+      </div>
+
+      <div class="ml-branch">
+
+        <div class="ml-row">
+          <div class="ml-label">No</div>
+          <div class="ml-warning">
+            Missing Values / Duplicates / Outliers / Leakage
+          </div>
+          <div class="ml-arrow">↩</div>
+          <div class="ml-step">EDA</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Yes</div>
+          <div class="ml-action">Feature Engineering</div>
+        </div>
+
+      </div>
+
+      <!-- Splitting -->
+      <div class="ml-row">
+        <div class="ml-step">Feature Engineering</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-decision">How to Split?</div>
+      </div>
+
+      <div class="ml-branch">
+
+        <div class="ml-row">
+          <div class="ml-label">Random</div>
+          <div class="ml-action">Train / Validation / Test</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Imbalanced</div>
+          <div class="ml-action">Stratified Split</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Time</div>
+          <div class="ml-action">Chronological Split</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Same Entity</div>
+          <div class="ml-action">Group-based Split</div>
+        </div>
+
+      </div>
+
+      <!-- Class imbalance -->
+      <div class="ml-row">
+        <div class="ml-step">Training Data</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-decision">Class Imbalance?</div>
+      </div>
+
+      <div class="ml-branch">
+
+        <div class="ml-row">
+          <div class="ml-label">No</div>
+          <div class="ml-action">Build Baseline Model</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Yes</div>
+          <div class="ml-action">
+            Class Weights / SMOTE / Oversampling / Undersampling
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modelling -->
+      <div class="ml-row">
+        <div class="ml-step">Baseline Model</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-step">Candidate Models</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-step">Cross-validation</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-decision">Performance?</div>
+      </div>
+
+      <div class="ml-branch">
+
+        <div class="ml-row">
+          <div class="ml-label">Both Low</div>
+          <div class="ml-warning">Underfitting</div>
+          <div class="ml-arrow">→</div>
+          <div class="ml-action">
+            Better Features / More Suitable Model
+          </div>
+          <div class="ml-arrow">↩</div>
+          <div class="ml-step">Feature Engineering</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Train High</div>
+          <div class="ml-warning">Overfitting</div>
+          <div class="ml-arrow">→</div>
+          <div class="ml-action">
+            Regularisation / Simpler Model / More Data
+          </div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Stable</div>
+          <div class="ml-action">Hyperparameter Tuning</div>
+        </div>
+
+      </div>
+
+      <!-- Evaluation -->
+      <div class="ml-row">
+        <div class="ml-step">Model Evaluation</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-decision">Business Priority?</div>
+      </div>
+
+      <div class="ml-branch">
+
+        <div class="ml-row">
+          <div class="ml-label">Catch Risk</div>
+          <div class="ml-action">Recall</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Reduce Alerts</div>
+          <div class="ml-action">Precision</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Balance</div>
+          <div class="ml-action">F1-score</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Ranking</div>
+          <div class="ml-action">ROC-AUC / PR-AUC</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Regression</div>
+          <div class="ml-action">MAE / RMSE / MSE / R²</div>
+        </div>
+
+      </div>
+
+      <!-- Final decision -->
+      <div class="ml-row">
+        <div class="ml-step">Threshold Tuning</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-decision">Business Acceptable?</div>
+      </div>
+
+      <div class="ml-branch">
+
+        <div class="ml-row">
+          <div class="ml-label">No</div>
+          <div class="ml-arrow">↩</div>
+          <div class="ml-action">
+            Features / Model / Threshold / Business Rules
+          </div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">Yes</div>
+          <div class="ml-action">Untouched Test Set</div>
+        </div>
+
+      </div>
+
+      <!-- Delivery -->
+      <div class="ml-row">
+        <div class="ml-step">Final Test</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-step">Error Analysis</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-step">Dashboard / API / Batch</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-step">Decision Support</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-step">Monitoring</div>
+      </div>
+
+      <!-- Monitoring -->
+      <div class="ml-row">
+        <div class="ml-step">Monitor Drift & Performance</div>
+        <div class="ml-arrow">→</div>
+        <div class="ml-decision">Performance Declined?</div>
+      </div>
+
+      <div class="ml-branch">
+
+        <div class="ml-row">
+          <div class="ml-label">Yes</div>
+          <div class="ml-arrow">↩</div>
+          <div class="ml-action">Review Data / Retrain Model</div>
+        </div>
+
+        <div class="ml-row">
+          <div class="ml-label">No</div>
+          <div class="ml-action">Continue Monitoring</div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="label">Memory Anchor</div>
+
+    <div class="note">
+      Problem → Prepare → Split → Imbalance → Baseline → Compare →
+      Diagnose → Tune → Evaluate → Threshold → Test → Deliver → Monitor
+    </div>
+
+  </div>
+</details>
+
+<details>
+
+  
+  <summary>BSc Computer Science</summary>
+
+  <details open>
+  <summary>Module Review Roadmap</summary>
+
+  <div class="content">
+
+    <div class="label">Supports Data Governance & Data Modelling</div>
+
+    <ul>
+      <li>IBES_M3_Database_Programming</li>
+      <li>IBES_M2_Algorithms_and_Complexity</li>
+    </ul>
+
+    <div class="label">Supports Business Analysis & Solution Delivery</div>
+
+    <ul>
+      <li>IBES_M4_Software_Engineering</li>
+    </ul>
+
+    <div class="label">Supports Automation & Software Development</div>
+
+    <ul>
+      <li>IBES_M1_Advanced_Programming</li>
+    </ul>
+
+    <div class="label">Supports Platforms & Modern Technologies</div>
+
+    <ul>
+      <li>IBES_M5_Platforms_and_Emerging_Technologies</li>
+    </ul>
+
+    <div class="label">Supports Applied Data Science & AI</div>
+
+    <ul>
+      <li>IBES_M6_Artificial_Intelligence_and_Its_Applications</li>
+    </ul>
+
+  </div>
+
+</details>
+
+  <details open>
+    <summary>IBES_M1_Advanced_Programming</summary>
+
+    <details>
+      <summary>Core Topics</summary>
+      <ul>
+        <li>Foundational Programming</li>
+        <li>Functional Programming</li>
+        <li>Object-Oriented Programming</li>
+        <li>Concurrency & Parallel Programming</li>
+        <li>Code Optimisation & Refactoring</li>
+        <li>Advanced Java Features</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Assignments</summary>
+      <ul>
+        <li>Task 1 - Foundational Programming</li>
+        <li>Task 2 - Functional Programming</li>
+        <li>Task 3 - Object-Oriented Programming</li>
+        <li>Final Project</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>What I Learned</summary>
+      <ul>
+        <li>TBD</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Interview Translation</summary>
+      <ul>
+        <li>Software Development</li>
+        <li>Application Development</li>
+        <li>Object-Oriented Design</li>
+      </ul>
+    </details>
+
+  </details>
+
+  <details>
+    <summary>IBES_M2_Algorithms_and_Complexity</summary>
+
+    <details>
+      <summary>Core Topics</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Assignments</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>What I Learned</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Interview Translation</summary>
+      <ul>
+        <li>Problem Solving</li>
+        <li>Algorithm Design</li>
+        <li>Performance Optimisation</li>
+      </ul>
+    </details>
+
+  </details>
+
+  <details>
+    <summary>IBES_M3_Database_Programming</summary>
+
+    <details>
+      <summary>Core Topics</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Assignments</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>What I Learned</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Interview Translation</summary>
+      <ul>
+        <li>Database Design</li>
+        <li>SQL Development</li>
+        <li>Data Modelling</li>
+      </ul>
+    </details>
+
+  </details>
+
+  <details>
+    <summary>IBES_M4_Software_Engineering</summary>
+
+    <details>
+      <summary>Core Topics</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Assignments</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>What I Learned</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Interview Translation</summary>
+      <ul>
+        <li>SDLC</li>
+        <li>System Design</li>
+        <li>Testing</li>
+        <li>Documentation</li>
+      </ul>
+    </details>
+
+  </details>
+
+  <details>
+    <summary>IBES_M5_Platforms_and_Emerging_Technologies</summary>
+
+    <details>
+      <summary>Core Topics</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Assignments</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>What I Learned</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Interview Translation</summary>
+      <ul>
+        <li>Cloud Platforms</li>
+        <li>Emerging Technologies</li>
+        <li>Modern Architecture</li>
+      </ul>
+    </details>
+
+  </details>
+
+  <details>
+    <summary>IBES_M6_Artificial_Intelligence_and_Its_Applications</summary>
+
+    <details>
+      <summary>Core Topics</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Assignments</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>What I Learned</summary>
+      <ul><li>TBD</li></ul>
+    </details>
+
+    <details>
+      <summary>Interview Translation</summary>
+      <ul>
+        <li>Artificial Intelligence</li>
+        <li>Machine Learning</li>
+        <li>Applied AI</li>
+      </ul>
+    </details>
+
+  </details>
+
+</details>
+</details>
+
+
+<details class="section"><summary>Core Competencies</summary><div class="content"><ul><li>Operational Analytics &amp; Data Investigation</li><li>Data Governance &amp; Data Quality Management</li><li>Data Modelling &amp; Source-to-Target Mapping</li><li>Data Transformation &amp; Data Flow Design</li><li>Business Analysis &amp; Solution Delivery</li><li>Financial Analytics &amp; Decision Support</li><li>Automation &amp; Data Product Development</li><li>Stakeholder Management &amp; User Enablement</li><li>Applied Data Science &amp; Predictive Analytics</li></ul></div></details>
+
+
+<details class="section">
+<summary>Core Capability Framework</summary>
+
+<div class="content">
+
+<div class="label">Business & Delivery</div>
+
+<div class="badges">
+<span class="badge">Business Analysis</span>
+<span class="badge">FP&A</span>
+<span class="badge">Requirements Gathering</span>
+<span class="badge">Solution Design</span>
+<span class="badge">Stakeholder Management</span>
+<span class="badge">UAT</span>
+<span class="badge">Training</span>
+<span class="badge">Documentation</span>
+</div>
+
+<div class="label">Data & Analytics</div>
+
+<div class="badges">
+<span class="badge">Operational Analytics</span>
+<span class="badge">Data Governance</span>
+<span class="badge">Data Quality</span>
+<span class="badge">Data Modelling</span>
+<span class="badge">Data Mapping</span>
+<span class="badge">Data Transformation</span>
+<span class="badge">Data Flow Design</span>
+<span class="badge">ETL</span>
+<span class="badge">Predictive Analytics</span>
+<span class="badge">Machine Learning</span>
+</div>
+
+<div class="label">Technology</div>
+
+<div class="badges">
+<span class="badge">SQL</span>
+<span class="badge">Python</span>
+<span class="badge">R</span>
+<span class="badge">VBA</span>
+<span class="badge">JavaScript</span>
+<span class="badge">HTML</span>
+<span class="badge">Dataiku DSS</span>
+<span class="badge">Amazon Redshift</span>
+<span class="badge">MicroStrategy</span>
+<span class="badge">Power Query</span>
+<span class="badge">DAX</span>
+<span class="badge">Tableau</span>
+<span class="badge">R Shiny</span>
+<span class="badge">REST APIs</span>
+</div>
+
+</div>
+</details>
+
+
+</div>
+<script>
+function setAll(open){document.querySelectorAll('details').forEach(d=>d.open=open)}
+function resetView(){setAll(false);document.querySelectorAll('.section').forEach(d=>d.open=true);const career=document.querySelector('.section details');if(career)career.open=true}
+</script>
+</body>
+</html>
