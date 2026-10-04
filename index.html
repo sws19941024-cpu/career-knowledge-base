@@ -128,9 +128,7 @@ ul{margin:6px 0 10px 20px;padding:0}li{margin:5px 0}
 <body>
 <div class="container">
 <h1>Master Career & Academic Map</h1>
-<p class="subtitle">Version: v3 |
-Last Updated: 2026-10-01
-</p>
+<p class="subtitle">Career facts, academic background, competencies, technologies, and expandable interview stories.</p>
 <div class="toolbar">
   <button onclick="setAll(true)">Expand all</button>
   <button onclick="setAll(false)">Collapse all</button>
@@ -139,205 +137,25 @@ Last Updated: 2026-10-01
 
 <details class="section" open>
 <summary>Career</summary>
-<details open>
-  <summary>Career Direction & Positioning</summary>
 
-  <details open>
-    <summary>Current Position</summary>
-
-    <div class="content">
-
-      <div class="label">Professional Identity</div>
-
-      <div class="note">
-        Data & Analytics Professional
-      </div>
-
-      <div class="label">Current Strengths</div>
-
-      <ul>
-        <li>Finance Analytics</li>
-        <li>Operational Analytics</li>
-        <li>Data Governance</li>
-        <li>Data Modelling</li>
-        <li>Business Analysis</li>
-        <li>Data Transformation</li>
-        <li>Decision Support Analytics</li>
-      </ul>
-
-      <div class="label">Applied Data Science Capabilities</div>
-
-      <ul>
-        <li>Predictive Analytics</li>
-        <li>Risk Analytics</li>
-        <li>Fraud Analytics</li>
-        <li>Natural Language Processing (NLP)</li>
-        <li>Machine Learning</li>
-      </ul>
-
-    </div>
-
-  </details>
-
-  <details open>
-    <summary>Ultimate Goal</summary>
-
-    <div class="content">
-
-      <div class="label">Target Positioning</div>
-
-      <div class="note">
-        Applied Data Scientist (BFSI Domain)
-      </div>
-
-      <div class="label">Target Domains</div>
-
-      <ul>
-        <li>Banking</li>
-        <li>Insurance</li>
-        <li>Risk Management</li>
-        <li>Fraud Analytics</li>
-        <li>Financial Analytics</li>
-      </ul>
-
-    </div>
-
-  </details>
-
-  <details open>
-    <summary>Career Roadmap</summary>
-
-    <div class="content">
-
-      <div class="flow">
-
-        <span>Finance Analytics</span>
-        <b>→</b>
-
-        <span>Data Governance</span>
-        <b>→</b>
-
-        <span>Operational Analytics</span>
-        <b>→</b>
-
-        <span>Applied Data Science</span>
-        <b>→</b>
-
-        <span>BFSI Applied Data Scientist</span>
-
-      </div>
-
-    </div>
-
-  </details>
-
-  <details open>
-    <summary>Target Roles (Next 2-5 Years)</summary>
-
-    <div class="content">
-
-      <ul>
-
-        <li>Risk Analytics</li>
-
-        <li>Fraud Analytics</li>
-
-        <li>Decision Science</li>
-
-        <li>Insurance Analytics</li>
-
-        <li>Financial Analytics</li>
-
-        <li>Applied Data Scientist (BFSI)</li>
-
-      </ul>
-
-    </div>
-
-  </details>
-
-  <details open>
-    <summary>Roles to Avoid or Limit</summary>
-
-    <div class="content">
-
-      <ul>
-
-        <li>Pure Reporting Analyst</li>
-
-        <li>Pure Dashboard Developer</li>
-
-        <li>Pure Documentation Business Analyst</li>
-
-        <li>Pure Governance Policy Roles</li>
-
-      </ul>
-
-      <div class="note">
-        These roles can still be useful if they provide exposure to Analytics,
-        Risk, Fraud, Machine Learning or Data Science initiatives.
-      </div>
-
-    </div>
-
-  </details>
-
-</details>
-  
 <details open>
 <summary>Ralph Lauren Corporation</summary>
 
-<details><summary>Ownership</summary><div class="content">
-<ul><li>Range Plan VBA Toolbox</li><li>Dataiku Allocation Web App</li><li>End-to-End Allocation Pipeline</li></ul>
-</div></details>
+<details>
+<summary>Ownership</summary>
 
-<details class="story" open><summary>Detailed Data Lineage</summary><div class="content">
-<div class="label">Trigger</div><div class="note">Business user reports incorrect figures, missing data, or a failed business validation.</div>
-<div class="label">Investigation path</div>
-<div class="flow"><span>VBA Toolbox Report</span><b>→</b><span>Server Data Dump</span><b>→</b><span>Dataiku Dataset</span><b>→</b><span>Dataiku Recipe (Python)</span><b>→</b><span>MicroStrategy SQL</span><b>→</b><span>Redshift Tables</span></div>
-<div class="label">Typical checks</div><ul><li>Row-count and output reconciliation</li><li>Schema and field verification</li><li>Transformation and calculation-logic review</li><li>Upstream/downstream dependency tracing</li><li>Root-cause identification and production-fix validation</li></ul>
-</div></details>
+<div class="content">
 
-<details open><summary>Scope</summary><div class="content">
-<ul><li><strong>Production Support - Keep critical systems running</strong></li><li><strong>Data Lineage Investigation</strong></li><li><strong>Impact Analysis</strong></li><li><strong>Data Quality Validation</strong></li><li><strong>Stakeholder Engagement across APAC and EU teams</strong></li></ul>
-</div></details>
+<ul>
+<li>Enterprise Allocation & Planning Workflow</li>
+<li>Data Workflow Troubleshooting</li>
+<li>Business Rule Governance</li>
+<li>Production Support & Hypercare</li>
+<li>Release & Change Management</li>
+</ul>
 
-<details class="story" open><summary>Signature Stories</summary>
-
-<details><summary>1. GPH Global System Change</summary><div class="content">
-<div class="label">Context</div><div class="note">A global GPH system or schema change could affect several connected tools, pipelines, reports and downstream business processes.</div>
-<div class="label">Impact scope</div><ul><li>Range Plan VBA Toolbox and embedded business logic</li><li>Dataiku datasets, recipes and allocation pipeline</li><li>MicroStrategy reports and generated SQL</li><li>Redshift source tables and downstream reporting</li></ul>
-<div class="label">Actions</div><ul><li>Traced system dependencies before the change</li><li>Reviewed existing business and calculation logic</li><li>Refactored affected VBA modules</li><li>Modified Dataiku recipes and SQL logic where required</li><li>Supported SIT and UAT</li><li>Validated production outputs after rollout</li></ul>
-<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">Impact Analysis</span><span class="badge">Dependency Mapping</span><span class="badge">Change Management</span><span class="badge">Testing</span><span class="badge">Release Validation</span></div>
-</div></details>
-
-<details><summary>2. Wrong-data Investigation</summary><div class="content">
-<div class="label">Trigger</div><div class="note">A user reported incorrect figures in a VBA report or dashboard, and business validation did not pass.</div>
-<div class="label">Symptoms</div><ul><li>Report totals or dashboard figures did not match expectations</li><li>Data could be missing, incorrectly mapped, or transformed with outdated logic</li></ul>
-<div class="label">Investigation</div>
-<div class="flow"><span>VBA Output</span><b>→</b><span>Data Dump</span><b>→</b><span>Dataiku Dataset</span><b>→</b><span>Python Recipe</span><b>→</b><span>MicroStrategy SQL</span><b>→</b><span>Redshift</span></div>
-<div class="label">Actions</div><ul><li>Compared values across each stage of the data flow</li><li>Verified schemas, mappings and transformation logic</li><li>Reviewed the SQL generated through MicroStrategy</li><li>Located the affected function, recipe, query or source field</li><li>Applied or coordinated the fix and reran validation</li></ul>
-<div class="label">Validation</div><ul><li>Reconciled corrected outputs</li><li>Verified report and dashboard results</li><li>Confirmed the production result with users</li></ul>
-<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">Data Lineage</span><span class="badge">Root Cause Analysis</span><span class="badge">SQL Investigation</span><span class="badge">Production Support</span><span class="badge">Data Quality</span></div>
-</div></details>
-
-<details><summary>3. Dynamic UI Enhancement</summary><div class="content">
-<div class="label">Context</div><div class="note">The existing VBA reports were static, while users needed more flexible analysis across metrics and business hierarchies.</div>
-<div class="label">Actions</div><ul><li>Reviewed the limitation of the static reporting interface</li><li>Designed dynamic UI controls and filter behaviour</li><li>Added metric selection</li><li>Added market and market-group grouping</li><li>Added unit-type selection and related business logic</li><li>Updated, tested and deployed the VBA Toolbox</li></ul>
-<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">VBA Development</span><span class="badge">UI Development</span><span class="badge">Business Analysis</span><span class="badge">Requirements Gathering</span><span class="badge">Product Enhancement</span></div>
-</div></details>
-
-<details><summary>4. Allocation Logic Enhancement</summary><div class="content">
-<div class="label">Context</div><div class="note">Business requirements changed and the existing allocation logic or Dataiku application required updates.</div>
-<div class="label">Actions</div><ul><li>Gathered and clarified business requirements</li><li>Reviewed existing allocation rules and calculations</li><li>Modified Dataiku recipes and calculation fields</li><li>Validated downstream outputs and reconciled results</li><li>Supported UAT and change delivery</li></ul>
-<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">Business Analysis</span><span class="badge">Dataiku Development</span><span class="badge">Data Validation</span><span class="badge">Change Delivery</span></div>
-</div></details>
-
-<details><summary>5. Production Incident Resolution</summary><div class="content">
-<div class="label">Typical incidents</div><ul><li>Scheduled Dataiku data-dump workflow failed</li><li>VBA add-in or Toolbox crashed for users</li><li>A function or module generated an error</li><li>A production output interrupted a business workflow</li></ul>
-<div class="label">Support activities</div><ul><li>Received and reviewed error reports and user descriptions</li><li>Performed initial triage and categorised the incident</li><li>Investigated logs, functions, modules, recipes and data outputs</li><li>Handled L1 user support, L2 technical investigation and L3 root-cause work</li><li>Applied fixes, reran processes and validated results</li><li>Tracked bugs and documented resolutions</li><li>Led or supported weekly technical review meetings covering incidents, root causes and fixes</li></ul>
-<div class="label">Skills demonstrated</div><div class="badges"><span class="badge">Incident Management</span><span class="badge">L1/L2/L3 Support</span><span class="badge">Technical Communication</span><span class="badge">Bug Tracking</span><span class="badge">Operational Governance</span></div>
-</div></details>
+</div>
+</details>
 
 <details><summary>Technology</summary><div class="content">
 <div class="grid">
@@ -348,64 +166,1369 @@ Last Updated: 2026-10-01
 <div class="box"><strong>Platforms</strong>Dataiku DSS, MicroStrategy and Redshift</div>
 </div></div></details>
 
-<details class="story" open>
+<details open>
+<summary>Core Engineering Competencies</summary>
 
-  <summary>Scope → Story Mapping</summary>
+<div class="content">
+
+<div class="badges">
+
+<span class="badge">Data Workflow Troubleshooting</span>
+
+<span class="badge">Data Lineage Analysis</span>
+
+<span class="badge">ETL Validation</span>
+
+<span class="badge">Root Cause Analysis</span>
+
+<span class="badge">Dependency Mapping</span>
+
+<span class="badge">Impact Analysis</span>
+
+<span class="badge">Business Rule Management</span>
+
+<span class="badge">Change Management</span>
+
+<span class="badge">Release Management</span>
+
+<span class="badge">Production Support</span>
+
+<span class="badge">Production Stabilisation</span>
+
+<span class="badge">Hypercare Support</span>
+
+</div>
+
+</div>
+</details>
+
+<details class="story" open><summary>Data Workflow Troubleshooting Framework</summary><div class="content">
+<div class="label">Trigger</div><div class="note">Business user reports incorrect figures, missing data, or a failed business validation.</div>
+<div class="label">Investigation path</div>
+<div class="flow"><span>VBA Toolbox Report</span><b>→</b><span>Server Data Dump</span><b>→</b><span>Dataiku Dataset</span><b>→</b><span>Dataiku Recipe (Python)</span><b>→</b><span>MicroStrategy SQL</span><b>→</b><span>Redshift Tables</span></div>
+<div class="label">Typical checks</div><ul><li>Row-count and output reconciliation</li><li>Schema and field verification</li><li>Transformation and calculation-logic review</li><li>Upstream/downstream dependency tracing</li><li>Root-cause identification and production-fix validation</li></ul>
+</div></details>
+
+<details open>
+<summary>Scope</summary>
 
 <div class="content">
 
 <ul>
 
-<li>
-<strong>Production Support</strong>
-<ul>
-<li>Production Incident Resolution</li>
-<li>Wrong-data Investigation</li>
-</ul>
-</li>
+<li><strong>Data Workflow Troubleshooting</strong></li>
 
-<li>
-<strong>Data Lineage Investigation</strong>
-<ul>
-<li>Wrong-data Investigation</li>
-</ul>
-</li>
+<li><strong>Data Lineage Analysis</strong></li>
 
-<li>
-<strong>Impact Analysis</strong>
-<ul>
-<li>GPH Global System Change</li>
-</ul>
-</li>
+<li><strong>ETL Validation</strong></li>
 
-<li>
-<strong>Data Quality Validation</strong>
-<ul>
-<li>Wrong-data Investigation</li>
-<li>Allocation Logic Enhancement</li>
-<li>GPH Global System Change</li>
-</ul>
-</li>
+<li><strong>Root Cause Analysis</strong></li>
 
-<li>
-<strong>Stakeholder Engagement</strong>
-<ul>
-<li>Dynamic UI Enhancement</li>
-<li>Allocation Logic Enhancement</li>
-<li>GPH Global System Change</li>
-</ul>
-</li>
+<li><strong>Impact Analysis & Dependency Mapping</strong></li>
+
+<li><strong>Business Rule Governance</strong></li>
+
+<li><strong>Change & Release Management</strong></li>
+
+<li><strong>Production Support & Hypercare</strong></li>
+
+<li><strong>Production Stabilisation</strong></li>
+
+<li><strong>Stakeholder Engagement (APAC / EU)</strong></li>
 
 </ul>
 
 </div>
-</details>
 
 </details>
+
+<details class="story" open><summary>Signature Stories</summary>
+
+<details><summary>1. GPH Global System Change</summary><div class="content">
+<div class="label">Context</div><div class="note">A global GPH system or schema change could affect several connected tools, pipelines, reports and downstream business processes.</div>
+<details>
+<summary>Memory Version (Personal Notes)</summary>
+
+<div class="content">
+
+<div class="note">
+Global Team通知GPH Data Structure將會改動。
+作為本地Support Team，我嘅工作並唔係改Code咁簡單。
+</div>
+
+<div class="label">Impact Analysis</div>
+
+<ul>
+<li>VBA Toolbox</li>
+<li>Dataiku Workflow</li>
+<li>MSTR Reports</li>
+<li>Existing User Process</li>
+</ul>
+
+<div class="label">Dependency Mapping</div>
+
+<div class="flow">
+<span>Data Source</span>
+<b>→</b>
+<span>MSTR</span>
+<b>→</b>
+<span>Dataiku</span>
+<b>→</b>
+<span>Data Dump</span>
+<b>→</b>
+<span>VBA Toolbox</span>
+<b>→</b>
+<span>Business User</span>
+</div>
+
+<p>
+分析整條Reporting Flow，
+確認邊啲Logic、欄位、Mapping依賴舊Structure。
+</p>
+
+<div class="label">Change Preparation</div>
+
+<ul>
+<li>修改 VBA Logic</li>
+<li>修改 SQL Logic</li>
+<li>預留 Placeholder</li>
+<li>準備 Fallback 方案</li>
+<li>預測 Exception Cases</li>
+</ul>
+
+<div class="label">Business Alignment</div>
+
+<ul>
+<li>Critical Reports</li>
+<li>User Impact</li>
+<li>High Risk Areas</li>
+<li>Validation Approach</li>
+<li>Dry Run Testing</li>
+</ul>
+
+<div class="label">Hypercare Support</div>
+
+<ul>
+<li>User Feedback</li>
+<li>Report Output</li>
+<li>VBA Toolbox</li>
+<li>Dataiku Output</li>
+<li>Business Validation</li>
+</ul>
+
+<div class="label">Issue Classification</div>
+
+<ul>
+<li>IT問題</li>
+<li>HK DataLab問題</li>
+<li>Business Logic問題</li>
+<li>Data問題</li>
+</ul>
+
+<div class="label">Patch Cycle</div>
+
+<div class="flow">
+<span>v1.0</span>
+<b>→</b>
+<span>v1.1</span>
+<b>→</b>
+<span>v1.2</span>
+</div>
+
+<p>
+如果原定Logic未完全Cover新Case，
+重新Build、Deploy，再發Announcement通知Users。
+</p>
+
+<div class="label">Post Go-Live</div>
+
+<ul>
+<li>更新 Documentation</li>
+<li>更新 User Guide</li>
+<li>Follow-up Open Issues</li>
+<li>Support User Queries</li>
+<li>確認 Production 穩定</li>
+</ul>
+
+</div>
+</details>
+<details>
+<summary>Example - Physical Data Warehouse Change</summary>
+
+<div class="content">
+
+<div class="note">
+Global Team 決定改 Product Hierarchy Structure。
+</div>
+
+<div class="label">Original Structure</div>
+
+<pre>
+product_id
+product_group
+product_subgroup
+</pre>
+
+<div class="label">New Structure</div>
+
+<pre>
+product_id
+product_class
+product_group
+product_subgroup
+</pre>
+
+<div class="label">1. Data Warehouse Layer</div>
+
+<pre>
+ALTER TABLE product_master
+ADD COLUMN product_class VARCHAR(50);
+</pre>
+
+<p>
+Data Warehouse Team 更新 Redshift / Synapse / BigQuery Schema。
+</p>
+
+<div class="label">2. ETL Impact</div>
+
+<div class="flow">
+<span>Source</span>
+<b>→</b>
+<span>ETL</span>
+<b>→</b>
+<span>Data Warehouse</span>
+</div>
+
+<ul>
+<li>ETL Mapping 未更新</li>
+<li>新欄位未載入</li>
+<li>Load Job Fail</li>
+<li>Unexpected Null Values</li>
+</ul>
+
+<div class="label">3. View Impact</div>
+
+<pre>
+vw_product_hierarchy
+</pre>
+
+<p>
+Business Reports 使用緊舊 View。
+</p>
+
+<pre>
+SELECT
+product_id,
+product_group,
+product_subgroup
+FROM product_master
+</pre>
+
+<p>
+需要更新成：
+</p>
+
+<pre>
+SELECT
+product_id,
+product_class,
+product_group,
+product_subgroup
+FROM product_master
+</pre>
+
+<div class="label">4. BI Reporting Impact</div>
+
+<ul>
+<li>Join Logic Error</li>
+<li>Hierarchy Logic Error</li>
+<li>Prompt Error</li>
+<li>Missing Data</li>
+<li>Wrong Total</li>
+<li>Duplicate Count</li>
+</ul>
+
+<div class="label">5. Dataiku Impact</div>
+
+<ul>
+<li>Dataset Schema Outdated</li>
+<li>Visual Recipe Join Failure</li>
+<li>Formula Failure</li>
+<li>Pipeline Validation Failure</li>
+</ul>
+
+<div class="label">6. Business Validation Failure</div>
+
+<div class="note">
+
+User:
+
+"上年有500件貨品，
+點解而家得470件？"
+
+Root Cause:
+
+30件貨品未完成
+product_class Mapping。
+
+</div>
+
+<div class="label">7. Hypercare Support</div>
+
+<ul>
+<li>Report Error</li>
+<li>Missing Product</li>
+<li>Mapping Error</li>
+<li>Duplicate Result</li>
+</ul>
+
+<div class="label">8. Production Fix Cycle</div>
+
+<div class="flow">
+<span>v1.0</span>
+<b>→</b>
+<span>Fix Table Mapping</span>
+<b>→</b>
+<span>v1.1</span>
+<b>→</b>
+<span>Fix ETL Logic</span>
+<b>→</b>
+<span>v1.2</span>
+<b>→</b>
+<span>Fix Report Logic</span>
+<b>→</b>
+<span>Production Stable</span>
+</div>
+
+<div class="label">Key Lesson</div>
+
+<div class="flow">
+<span>Schema Change</span>
+<b>→</b>
+<span>ETL</span>
+<b>→</b>
+<span>Views</span>
+<b>→</b>
+<span>Dataiku</span>
+<b>→</b>
+<span>BI Reports</span>
+<b>→</b>
+<span>Business Process</span>
+<b>→</b>
+<span>User</span>
+</div>
+
+<div class="note">
+改 Redshift 唔係最難。
+
+最難係所有 Downstream Systems、
+Business Logic、User Workflow
+都要一齊保持正常運作。
+</div>
+
+</div>
+
+</details>
+<div class="label">Impact scope</div><ul><li>Range Plan VBA Toolbox and embedded business logic</li><li>Dataiku datasets, recipes and allocation pipeline</li><li>MicroStrategy reports and generated SQL</li><li>Redshift source tables and downstream reporting</li></ul>
+<div class="label">Actions</div><ul><li>Traced system dependencies before the change</li><li>Reviewed existing business and calculation logic</li><li>Refactored affected VBA modules</li><li>Modified Dataiku recipes and SQL logic where required</li><li>Supported SIT and UAT</li><li>Validated production outputs after rollout</li></ul>
+<div class="label">Skills demonstrated</div>
+<div class="label">Engineering Competencies</div>
+
+<div class="badges">
+
+<span class="badge">Impact Analysis</span>
+
+<span class="badge">Dependency Mapping</span>
+
+<span class="badge">Change Management</span>
+
+<span class="badge">Release Management</span>
+
+<span class="badge">Hypercare Support</span>
+
+<span class="badge">Production Stabilisation</span>
+
+</div>
+</div></details>
+
+<details><summary>2. Data Workflow Troubleshooting & Lineage Analysis</summary><div class="content">
+<div class="label">Trigger</div><div class="note">A user reported incorrect figures in a VBA report or dashboard, and business validation did not pass.</div>
+<div class="label">Symptoms</div><ul><li>Report totals or dashboard figures did not match expectations</li><li>Data could be missing, incorrectly mapped, or transformed with outdated logic</li></ul>
+<div class="label">Investigation</div>
+<div class="flow"><span>VBA Output</span><b>→</b><span>Data Dump</span><b>→</b><span>Dataiku Dataset</span><b>→</b><span>Python Recipe</span><b>→</b><span>MicroStrategy SQL</span><b>→</b><span>Redshift</span></div>
+<div class="label">Investigation Mind Flow</div>
+
+<div class="flow">
+<span>User Report Issue</span>
+<b>→</b>
+<span>Identify Affected Layer</span>
+<b>→</b>
+<span>Trace Data Lineage</span>
+<b>→</b>
+<span>Find Root Cause</span>
+<b>→</b>
+<span>Apply Fix</span>
+<b>→</b>
+<span>User Validation</span>
+</div>
+
+<div class="note">
+
+實際諗法：
+
+User 話有問題
+
+↓
+
+先判斷問題係：
+
+- VBA
+- Data Dump
+- Dataiku
+- SQL
+- Business Logic
+- User Validation
+
+↓
+
+再追 Data Lineage
+
+↓
+
+搵真正 Root Cause
+
+↓
+
+修補
+
+↓
+
+重新 Validation
+
+↓
+
+User Confirm
+
+↓
+
+Close Case
+
+</div>
+<details>
+
+<summary>Memory Version (Personal Notes)</summary>
+
+<div class="content">
+
+<div class="note">
+Business User 話個 VBA Report 數唔啱。
+
+通常唔會話：
+
+「SQL 錯」
+
+而係：
+
+「呢個 Market Total 同 Planning Team 對唔上」
+
+「Allocation Result 唔合理」
+
+「Business Validation Fail」
+
+「同上星期結果唔同」
+</div>
+
+<div class="label">User Validation</div>
+
+<ul>
+<li>攞 Screenshot</li>
+<li>攞 Report File</li>
+<li>確認邊個 Market</li>
+<li>確認邊個 Product</li>
+<li>確認邊個 Date Range</li>
+<li>確認預期結果係咩</li>
+</ul>
+
+<div class="label">Data Dump Check</div>
+
+<ul>
+<li>打開 Dump File</li>
+<li>Filter 同一個 Market</li>
+<li>Filter 同一個 Product</li>
+<li>Compare VBA Output 同 Dump Output</li>
+<li>Check Missing Rows</li>
+<li>Check Unexpected Rows</li>
+<li>Check Allocation Total</li>
+</ul>
+
+<p>
+如果 Dump 已經錯：
+問題通常唔係 VBA。
+</p>
+
+<p>
+如果 Dump 正常但 VBA 錯：
+通常先查 VBA。
+</p>
+
+<div class="label">Dataiku Check</div>
+
+<ul>
+<li>最近有冇 Release</li>
+<li>最近有冇 Deploy</li>
+<li>最近有冇 Business Rule Change</li>
+<li>最近有冇 Mapping Update</li>
+<li>最近有冇 Allocation Logic Update</li>
+<li>最近有冇 Schema Change</li>
+</ul>
+
+<p>
+通常第一句會問：
+
+「最近有冇人改過野？」
+</p>
+
+<div class="label">Typical Findings</div>
+
+<ul>
+<li>新 Logic 冇 Cover Edge Case</li>
+<li>新 Mapping 漏左某個 Market</li>
+<li>Business Rule 更新左</li>
+<li>歷史資料格式改左</li>
+<li>User Validation Logic 同 System Logic 唔一致</li>
+<li>Release 後出現 Regression Issue</li>
+</ul>
+
+<div class="label">Fix</div>
+
+<ul>
+<li>VBA Fix</li>
+<li>SQL Logic Fix</li>
+<li>通知 HK DataLab</li>
+<li>通知 IT Team</li>
+<li>重新 Run</li>
+<li>重新 Validation</li>
+<li>俾 User Re-check</li>
+</ul>
+
+<div class="label">Close Case</div>
+
+<ul>
+<li>Business Validation Pass</li>
+<li>User Confirm Result</li>
+<li>Issue Closed</li>
+</ul>
+
+</div>
+
+</details>
+<details>
+<summary>Example - Wrong Data Investigation Case</summary>
+
+<div class="content">
+
+<div class="note">
+Business User reported that a VBA report showed an incorrect allocation total and failed business validation.
+</div>
+
+<div class="label">User Reported Issue</div>
+
+<div class="note">
+
+Expected:
+
+10,000 Units
+
+Actual:
+
+9,650 Units
+
+Difference:
+
+350 Units Missing
+
+</div>
+
+<div class="label">Investigation Path</div>
+
+<div class="flow">
+<span>VBA Output</span>
+<b>→</b>
+<span>Data Dump</span>
+<b>→</b>
+<span>Dataiku Dataset</span>
+<b>→</b>
+<span>MicroStrategy SQL</span>
+</div>
+
+<p>
+The investigation started from the final VBA report because that was what business users actually saw.
+</p>
+
+<div class="label">Step 1 - VBA Validation</div>
+
+<ul>
+<li>Confirmed VBA calculations were producing expected totals</li>
+<li>Checked report filters and parameters</li>
+<li>Verified export logic</li>
+</ul>
+
+<p>
+No issue found.
+</p>
+
+<div class="label">Step 2 - Data Dump Validation</div>
+
+<ul>
+<li>Compared VBA output against source dump file</li>
+<li>Verified row counts</li>
+<li>Verified affected products existed in dump data</li>
+</ul>
+
+<p>
+Missing records already existed before VBA processing.
+</p>
+
+<div class="label">Step 3 - Dataiku Dataset Validation</div>
+
+<ul>
+<li>Compared row counts between datasets</li>
+<li>Validated joins and mappings</li>
+<li>Checked recent workflow changes</li>
+</ul>
+
+<p>
+No records missing at dataset level.
+</p>
+
+<div class="label">Step 4 - SQL Investigation</div>
+
+<ul>
+<li>Reviewed MicroStrategy generated SQL</li>
+<li>Validated WHERE conditions</li>
+<li>Reviewed join logic</li>
+<li>Compared outputs against historical results</li>
+</ul>
+
+<p>
+A filter condition excluded a subset of valid products after a recent business-rule change.
+</p>
+
+<div class="label">Root Cause</div>
+
+<div class="note">
+
+Business logic changed.
+
+Generated SQL still used the old filtering condition.
+
+Valid products were excluded before data reached reporting outputs.
+
+</div>
+
+<div class="label">Fix</div>
+
+<ul>
+<li>Updated SQL logic</li>
+<li>Validated output counts</li>
+<li>Regenerated dump files</li>
+<li>Retested VBA report</li>
+</ul>
+
+<div class="label">Result</div>
+
+<ul>
+<li>Missing 350 units restored</li>
+<li>Business validation passed</li>
+<li>User confirmed final report accuracy</li>
+</ul>
+
+<div class="label">Key Lesson</div>
+
+<div class="flow">
+<span>User Report</span>
+<b>→</b>
+<span>Data Validation</span>
+<b>→</b>
+<span>Lineage Tracing</span>
+<b>→</b>
+<span>Root Cause</span>
+<b>→</b>
+<span>Fix</span>
+<b>→</b>
+<span>Business Confirmation</span>
+</div>
+
+</div>
+
+</details>
+
+<div class="label">Actions</div><ul><li>Compared values across each stage of the data flow</li><li>Verified schemas, mappings and transformation logic</li><li>Reviewed the SQL generated through MicroStrategy</li><li>Located the affected function, recipe, query or source field</li><li>Applied or coordinated the fix and reran validation</li></ul>
+<div class="label">Validation</div><ul><li>Reconciled corrected outputs</li><li>Verified report and dashboard results</li><li>Confirmed the production result with users</li></ul>
+<div class="label">Skills demonstrated</div>
+<div class="badges">
+
+<span class="badge">Data Workflow Troubleshooting</span>
+
+<span class="badge">Data Lineage Analysis</span>
+
+<span class="badge">ETL Validation</span>
+
+<span class="badge">Root Cause Analysis</span>
+
+<span class="badge">Schema Validation</span>
+
+<span class="badge">Production Support</span>
+
+</div>
+</div></details>
+
+<details><summary>3. Analytics Application Enhancement</summary><div class="content">
+<div class="label">Context</div><div class="note">The existing VBA reports were static,Users could only consume predefined reports.The objective was to transform static tools into configurable analytics applications.</div>
+<details>
+<summary>Memory Version (Personal Notes)</summary>
+
+<div class="content">
+
+<div class="note">
+
+原本 VBA Toolbox 比較 Static。
+
+Business User 每次想睇：
+
+- 另一個 Market
+- 另一個 Market Group
+- 另一個 Metric
+- 另一種 Unit
+
+通常要重新開 Report，
+甚至搵 Support Team 幫手。
+
+</div>
+
+<div class="label">User Requests</div>
+
+<ul>
+<li>自由選擇 Market</li>
+<li>自由選擇 Market Group</li>
+<li>自由選擇 Metric</li>
+<li>自由選擇 Unit Type</li>
+<li>自由組合分析結果</li>
+</ul>
+
+<div class="label">Original Flow</div>
+
+<div class="flow">
+<span>Fixed Input</span>
+<b>→</b>
+<span>Static Logic</span>
+<b>→</b>
+<span>Static Output</span>
+</div>
+
+<div class="label">Enhanced Flow</div>
+
+<div class="flow">
+<span>User Selection</span>
+<b>→</b>
+<span>Dynamic Logic</span>
+<b>→</b>
+<span>Grouping</span>
+<b>→</b>
+<span>Aggregation</span>
+<b>→</b>
+<span>Dynamic Output</span>
+</div>
+
+<div class="label">Actual Work</div>
+
+<ul>
+<li>修改 VBA UI</li>
+<li>新增 Dropdown</li>
+<li>新增 Metric Selection</li>
+<li>新增 Market Group Logic</li>
+<li>修改 Aggregation Logic</li>
+<li>修改 Output Layout</li>
+<li>Regression Testing</li>
+</ul>
+
+</div>
+</details>
+<details>
+<summary>Example - Dynamic Analytics Application Case</summary>
+
+<div class="content">
+
+<div class="note">
+
+Business User 希望自行分析：
+
+Sales
+
+Inventory
+
+Allocation
+
+不同 Market 組合。
+
+</div>
+
+<div class="flow">
+
+<span>Select Market</span>
+
+<b>→</b>
+
+<span>Select Metric</span>
+
+<b>→</b>
+
+<span>Select Unit Type</span>
+
+<b>→</b>
+
+<span>Dynamic Aggregation</span>
+
+<b>→</b>
+
+<span>Generate Report</span>
+
+</div>
+
+<div class="label">Result</div>
+
+<ul>
+
+<li>減少 Manual Report Requests</li>
+
+<li>提升 User Self-Service 能力</li>
+
+<li>減少 Support Workload</li>
+
+</ul>
+
+</div>
+
+</details>
+<div class="label">Actions</div><ul><li>Reviewed the limitation of the static reporting interface</li><li>Designed dynamic UI controls and filter behaviour</li><li>Added metric selection</li><li>Added market and market-group grouping</li><li>Added unit-type selection and related business logic</li><li>Updated, tested and deployed the VBA Toolbox</li></ul>
+<div class="label">Skills demonstrated</div>
+<div class="badges">
+
+<span class="badge">Analytics Application Development</span>
+
+<span class="badge">Workflow Automation</span>
+
+<span class="badge">Dynamic Reporting</span>
+
+<span class="badge">Requirements Analysis</span>
+
+<span class="badge">Stakeholder Engagement</span>
+
+</div>
+</div></details>
+
+<details><summary>4. Business Rule Governance & Allocation Platform</summary><div class="content">
+<div class="label">Context</div><div class="note">Business requirements changed and the existing allocation logic or Dataiku application required updates.</div>
+<details>
+<summary>Memory Version (Personal Notes)</summary>
+
+<div class="content">
+
+<div class="note">
+
+Allocation Tool 唔係單純 ETL。
+
+其實係：
+
+Business Rule Platform。
+
+Business Team 經常改：
+
+- Mapping
+- Cluster
+- Category Rules
+- Allocation Logic
+
+所以 Dataiku Workflow、
+Python Recipe、
+Validation Logic
+
+都要跟住調整。
+
+</div>
+
+<div class="label">Typical Changes</div>
+
+<ul>
+
+<li>Category Mapping Change</li>
+
+<li>Store Cluster Change</li>
+
+<li>Allocation Rule Change</li>
+
+<li>Calculation Logic Change</li>
+
+<li>Output Requirement Change</li>
+
+</ul>
+
+<div class="label">Investigation Flow</div>
+
+<div class="flow">
+
+<span>Business Rule</span>
+
+<b>→</b>
+
+<span>Recipe</span>
+
+<b>→</b>
+
+<span>ETL</span>
+
+<b>→</b>
+<details>
+<summary>Example - Allocation Rule Change Case</summary>
+
+<div class="content">
+
+<div class="note">
+
+Business Team 更新 Allocation Logic。
+
+APAC 市場使用新 Allocation Factor。
+
+</div>
+
+<div class="flow">
+
+<span>Old Rule</span>
+
+<b>→</b>
+
+<span>ETL Update</span>
+
+<b>→</b>
+
+<span>Validation</span>
+
+<b>→</b>
+
+<span>Business Review</span>
+
+<b>→</b>
+
+<span>Deployment</span>
+
+</div>
+
+<div class="label">Validation</div>
+
+<ul>
+
+<li>Mapping Tables</li>
+
+<li>Allocation Totals</li>
+
+<li>Output Reconciliation</li>
+
+<li>Business Sign-off</li>
+
+</ul>
+
+</div>
+
+</details>
+<div class="label">Actions</div><ul><li>Gathered and clarified business requirements</li><li>Reviewed existing allocation rules and calculations</li><li>Modified Dataiku recipes and calculation fields</li><li>Validated downstream outputs and reconciled results</li><li>Supported UAT and change delivery</li></ul>
+<div class="label">Skills demonstrated</div>
+<div class="badges">
+
+<span class="badge">Business Rule Management</span>
+
+<span class="badge">ETL Validation</span>
+
+<span class="badge">Data Quality Validation</span>
+
+<span class="badge">Rule Governance</span>
+
+<span class="badge">Allocation Platform</span>
+
+<span class="badge">Mapping Validation</span>
+
+</div>
+</div></details>
+
+<details><summary>5. Production Support & Stabilisation</summary><div class="content">
+  <details>
+<summary>Memory Version (Personal Notes)</summary>
+
+<div class="content">
+
+<div class="note">
+
+User 出問題時唔會話：
+
+Python Error。
+
+通常係：
+
+「Result 唔啱」
+
+「Report Fail」
+
+「Data 唔見左」
+
+「Workflow Fail」
+
+</div>
+
+<div class="label">Support Flow</div>
+
+<div class="flow">
+
+<span>User Issue</span>
+
+<b>→</b>
+
+<span>Triage</span>
+
+<b>→</b>
+
+<span>Lineage Investigation</span>
+
+<b>→</b>
+
+<span>Root Cause</span>
+
+<b>→</b>
+
+<span>Fix</span>
+
+<b>→</b>
+
+<span>Validation</span>
+
+</div>
+
+<div class="label">Typical Root Causes</div>
+
+<ul>
+
+<li>Schema Change</li>
+
+<li>Mapping Issue</li>
+
+<li>Business Rule Change</li>
+
+<li>Workflow Failure</li>
+
+<li>Regression Issue</li>
+
+</ul>
+
+</div>
+
+</details>
+<details>
+<summary>Example - Dataiku Workflow Failure Case</summary>
+
+<div class="content">
+
+<div class="note">
+
+Scheduled Dataiku Workflow Failed.
+
+Business Users could not receive daily allocation output.
+
+</div>
+
+<div class="flow">
+
+<span>Workflow Failure</span>
+
+<b>→</b>
+
+<span>Check Logs</span>
+
+<b>→</b>
+
+<span>Schema Validation</span>
+
+<b>→</b>
+
+<span>Root Cause</span>
+
+<b>→</b>
+
+<span>Rerun</span>
+
+<b>→</b>
+
+<span>User Confirmation</span>
+
+</div>
+
+<div class="label">Root Cause</div>
+
+<ul>
+
+<li>Dataset Schema Change</li>
+
+<li>Join Failure</li>
+
+<li>Unexpected Null Values</li>
+
+</ul>
+
+<div class="label">Result</div>
+
+<ul>
+
+<li>Workflow Restored</li>
+
+<li>Output Validated</li>
+
+<li>Business Process Resumed</li>
+
+</ul>
+
+</div>
+
+</details>
+<div class="label">Typical incidents</div><ul><li>Scheduled Dataiku data-dump workflow failed</li><li>VBA add-in or Toolbox crashed for users</li><li>A function or module generated an error</li><li>A production output interrupted a business workflow</li></ul>
+<div class="label">Support activities</div><ul><li>Received and reviewed error reports and user descriptions</li><li>Performed initial triage and categorised the incident</li><li>Investigated logs, functions, modules, recipes and data outputs</li><li>Handled L1 user support, L2 technical investigation and L3 root-cause work</li><li>Applied fixes, reran processes and validated results</li><li>Tracked bugs and documented resolutions</li><li>Led or supported weekly technical review meetings covering incidents, root causes and fixes</li></ul>
+<div class="label">Skills demonstrated</div>
+<div class="badges">
+
+<span class="badge">Production Support</span>
+
+<span class="badge">Incident Management</span>
+
+<span class="badge">Root Cause Analysis</span>
+
+<span class="badge">Production Stabilisation</span>
+
+<span class="badge">Release Validation</span>
+
+</div>
+</div></details>
 </details>
 
 <details open>
+<summary>Engineer Mindset</summary>
+
+<div class="content">
+
+<div class="flow">
+
+<span>Business Problem</span>
+
+<b>→</b>
+
+<span>Identify Affected Layer</span>
+
+<b>→</b>
+
+<span>Trace Data Lineage</span>
+
+<b>→</b>
+
+<span>Validate ETL</span>
+
+<b>→</b>
+
+<span>Find Root Cause</span>
+
+<b>→</b>
+
+<span>Implement Fix</span>
+
+<b>→</b>
+
+<span>Validate Output</span>
+
+<b>→</b>
+
+<span>Release</span>
+
+<b>→</b>
+
+<span>Production Stabilisation</span>
+
+</div>
+
+<div class="note">
+
+This mindset was developed through supporting
+enterprise allocation platforms, Dataiku workflows,
+business-rule changes, production incidents and
+global system rollouts.
+
+</div>
+
+</div>
+
+</details>
+<details open>
+<summary>Engineering Capability Map</summary>
+
+<div class="content">
+
+<div class="note">
+
+RL Experience 本質上並非 VBA 或 Dataiku Support。
+
+核心價值來自於管理企業級 Analytics Platform、
+Business Rules、Data Workflows 及 Production Operations。
+
+</div>
+
+<pre>
+
+                           RL
+
+                           │
+
+ ┌─────────────────────────┼─────────────────────────┐
+
+ │                         │                         │
+
+ ▼                         ▼                         ▼
+
+Workflow              Change & Release       Analytics Apps
+
+ │                         │                         │
+
+ ▼                         ▼                         ▼
+
+Lineage              Impact Analysis         Requirements
+
+ ▼                         ▼                         ▼
+
+ETL Validation       Dependency Mapping      Stakeholders
+
+ ▼                         ▼                         ▼
+
+Root Cause           Hypercare               User Enablement
+
+ │                         │                         │
+
+ └─────────────────────────┼─────────────────────────┘
+
+                           ▼
+
+                Production Stabilisation
+
+</pre>
+
+<div class="label">Translation</div>
+
+<div class="badges">
+
+<span class="badge">Data Workflow Troubleshooting</span>
+
+<span class="badge">Data Lineage Analysis</span>
+
+<span class="badge">ETL Validation</span>
+
+<span class="badge">Root Cause Analysis</span>
+
+<span class="badge">Impact Analysis</span>
+
+<span class="badge">Dependency Mapping</span>
+
+<span class="badge">Business Rule Management</span>
+
+<span class="badge">Change Management</span>
+
+<span class="badge">Release Management</span>
+
+<span class="badge">Production Support</span>
+
+<span class="badge">Hypercare</span>
+
+<span class="badge">Production Stabilisation</span>
+
+</div>
+
+</div>
+
+</details>
+
+</details>
+</details>
+<details open>
   <summary>FWD Insurance</summary>
+  <details open>
+
+<summary>Engineering Perspectives</summary>
+
+<div class="content">
+
+<div class="grid">
+
+<div class="box">
+
+<strong>Business Analysis</strong>
+
+Requirements Analysis
+
+Stakeholder Management
+
+SDLC
+
+</div>
+
+<div class="box">
+
+<strong>Software Engineering</strong>
+
+Solution Design
+
+Functional Decomposition
+
+Testing
+
+Deployment
+
+</div>
+
+<div class="box">
+
+<strong>Database Design</strong>
+
+Business Entities
+
+Business Keys
+
+Relationships
+
+Data Modelling
+
+</div>
+
+<div class="box">
+
+<strong>Data Engineering</strong>
+
+ETL
+
+Validation
+
+SSOT
+
+Pipeline
+
+Automation
+
+</div>
+
+</div>
+
+</div>
+
+</details>
 
   <details open>
     <summary>Professional Nature Mapping</summary>
@@ -519,227 +1642,808 @@ Last Updated: 2026-10-01
     </div>
   </details>
 
-  <details class="story" open>
-    <summary>Story 1 - Insurance Prototype Delivery</summary>
+<!-- ===================================================== -->
+<!-- FWD STORY 1 - BUSINESS ANALYSIS & SDLC                -->
+<!-- ===================================================== -->
 
-    <div class="content">
+<details class="story" open>
+  <summary>Story 1 - Insurance Data Product Delivery
+    (需求 → SDLC → UAT → Training）
+  </summary>
 
-      <div class="label">Nature</div>
-      <div class="note">Business Analysis</div>
+  <div class="content">
 
-      <div class="label">Situation</div>
-      <div class="note">
-        Business users relied on manual insurance commission processes and spreadsheet-based workflows.
-      </div>
+    <div class="label">核心問題</div>
 
-      <div class="label">Delivery Flow</div>
-
-      <div class="flow">
-        <span>Requirements Gathering</span>
-        <b>→</b>
-        <span>Process Analysis</span>
-        <b>→</b>
-        <span>Solution Blueprint</span>
-        <b>→</b>
-        <span>Prototype Development</span>
-        <b>→</b>
-        <span>Testing</span>
-        <b>→</b>
-        <span>UAT</span>
-        <b>→</b>
-        <span>Training</span>
-        <b>→</b>
-        <span>Deployment</span>
-      </div>
-
-      <div class="label">Skills Demonstrated</div>
-
-      <div class="badges">
-        <span class="badge">Business Analysis</span>
-        <span class="badge">Requirements Gathering</span>
-        <span class="badge">Solution Design</span>
-        <span class="badge">Stakeholder Management</span>
-        <span class="badge">UAT</span>
-        <span class="badge">Training</span>
-      </div>
-
+    <div class="note">
+      我如何由業務需求開始，完成一個保險數據產品 Prototype，
+      並經歷由需求分析、開發、測試、培訓到正式交付嘅完整流程？
     </div>
-  </details>
 
-  <details class="story" open>
-    <summary>Story 2 - SSOT Creation</summary>
+    <div class="label">背景</div>
 
-    <div class="content">
+    <div class="note">
+      業務部門依賴分散嘅保險資料、人工輸入流程同 Excel 工作方式。
 
-      <div class="label">Nature</div>
-      <div class="note">Data Governance</div>
+      不同角色有不同需要：
 
-      <div class="label">Situation</div>
-      <div class="note">
-        Data existed across multiple files and manual processes.
-        Different structures and definitions produced inconsistent outputs.
-      </div>
+      - Management 希望快速睇到整理好嘅資料同計算結果
+      - Operations Users 希望改善資料輸入流程
+      - Reporting Users 希望取得一致而可監控嘅結果
+      - Business Users 希望減少重複輸入同人手整理工作
 
-      <div class="label">Governance Flow</div>
-
-      <div class="flow">
-        <span>Identify Sources</span>
-        <b>→</b>
-        <span>Consolidate Data</span>
-        <b>→</b>
-        <span>Standardise Structures</span>
-        <b>→</b>
-        <span>Define Business Rules</span>
-        <b>→</b>
-        <span>Validate Data Quality</span>
-        <b>→</b>
-        <span>Create SSOT</span>
-      </div>
-
-      <div class="label">Governance Activities</div>
-
-      <ul>
-        <li>Data Standardisation</li>
-        <li>Data Quality Validation</li>
-        <li>Business Rule Definition</li>
-        <li>Data Consolidation</li>
-        <li>Trusted Data Source Establishment</li>
-        <li>Output Consistency Controls</li>
-      </ul>
-
-      <div class="label">Skills Demonstrated</div>
-
-      <div class="badges">
-        <span class="badge">Data Governance</span>
-        <span class="badge">SSOT Design</span>
-        <span class="badge">Data Quality</span>
-        <span class="badge">Business Rules</span>
-        <span class="badge">Data Standardisation</span>
-      </div>
-
+      呢個項目嘅目標係喺六個月合約期內建立一個可供業務試用嘅 Prototype。
     </div>
-  </details>
 
-  <details class="story" open>
-    <summary>Story 3 - Commission Data Integration Model</summary>
+    <!-- 當年做法 -->
 
-    <div class="content">
+    <details open>
+      <summary>當年實際做法</summary>
 
-      <div class="label">Nature</div>
-      <div class="note">Data Modelling</div>
+      <div class="content">
 
-      <div class="label">Business Structure</div>
+        <div class="label">需求收集</div>
 
-      <div class="flow">
-        <span>Policy</span>
-        <b>→</b>
-        <span>Policy ID</span>
-        <b>→</b>
-        <span>Commission Records</span>
-        <b>→</b>
-        <span>Agent ID</span>
-        <b>→</b>
-        <span>Agent Master</span>
+        <ul>
+          <li>與不同部門及不同角色嘅 Business Users 開會</li>
+          <li>了解現有工作流程、困難及期望結果</li>
+          <li>區分資料輸入、計算、監控及報表需求</li>
+          <li>將 User Requirements 轉化成一項項系統功能</li>
+          <li>識別不同 User Requirements 之間有冇衝突</li>
+        </ul>
+
+        <div class="label">方案設計</div>
+
+        <ul>
+          <li>構思 Solution Blueprint</li>
+          <li>將整個項目拆成較細嘅 Development Tasks</li>
+          <li>評估每項功能嘅技術難度及所需時間</li>
+          <li>考慮功能之間嘅依賴及衝突</li>
+          <li>評估功能對 User Experience 嘅影響</li>
+        </ul>
+
+        <div class="label">Agile Delivery</div>
+
+        <div class="flow">
+          <span>開發部分功能</span>
+          <b>→</b>
+          <span>向 Manager 更新</span>
+          <b>→</b>
+          <span>向 Users 展示</span>
+          <b>→</b>
+          <span>收集 Feedback</span>
+          <b>→</b>
+          <span>調整下一輪功能</span>
+        </div>
+
+        <div class="label">測試與推出</div>
+
+        <div class="flow">
+          <span>收集 User Scenarios</span>
+          <b>→</b>
+          <span>內部測試</span>
+          <b>→</b>
+          <span>Pilot User Training</span>
+          <b>→</b>
+          <span>試行</span>
+          <b>→</b>
+          <span>擴大 User Group</span>
+          <b>→</b>
+          <span>正式交付</span>
+        </div>
+
+        <ul>
+          <li>向不同角色收集實際 Use Cases</li>
+          <li>定義預期輸入及預期結果</li>
+          <li>先進行內部測試</li>
+          <li>邀請每個部門嘅 Pilot Users 參與 Training</li>
+          <li>準備 PPT、初稿文件及操作示範</li>
+          <li>試行後逐步擴大使用者範圍</li>
+          <li>提供 Bug Fix、User Support 同後續 Enhancement</li>
+        </ul>
+
       </div>
+    </details>
 
-      <div class="label">Modelling Flow</div>
+    <!-- 正確做法 -->
 
-      <div class="flow">
-        <span>Business Entities</span>
-        <b>→</b>
-        <span>Business Keys</span>
-        <b>→</b>
-        <span>Relationships</span>
-        <b>→</b>
-        <span>Data Mapping</span>
-        <b>→</b>
-        <span>Business Rules</span>
-        <b>→</b>
-        <span>Reporting Dataset</span>
+    <details>
+      <summary>正確做法與可以修正嘅地方</summary>
+
+      <div class="content">
+
+        <div class="label">當年方向正確嘅部分</div>
+
+        <ul>
+          <li>先理解 Business Problem，而唔係直接寫 Code</li>
+          <li>與不同角色收集需求</li>
+          <li>將 Requirements 拆成 Functions 同 Tasks</li>
+          <li>評估需求衝突、可行性及交付時間</li>
+          <li>採用 Iterative Delivery，而唔係一次過完成</li>
+          <li>使用 Pilot Users 進行試行</li>
+          <li>提供 Training、Documentation 及 Post-deployment Support</li>
+        </ul>
+
+        <div class="label">可以補強嘅正式 Deliverables</div>
+
+        <ul>
+          <li>Project Scope：清楚定義 In Scope、Out of Scope 同目標</li>
+          <li>BRD / Requirement List：記錄 Business Requirements</li>
+          <li>Functional Specification：將需求轉成 Input、Logic、Output 同 Validation</li>
+          <li>Process Map：記錄 As-Is 同 To-Be Process</li>
+          <li>Acceptance Criteria：每項功能應該點樣先算完成</li>
+          <li>Requirement Traceability：需求、功能同測試案例之間嘅對應</li>
+          <li>UAT Sign-off：正式記錄 User 是否接受交付結果</li>
+        </ul>
+
+        <div class="note">
+          待核實：
+
+          當年可能有 Requirement Notes、Blueprint、Task List、
+          Training Documents 同 Testing Scenarios，
+
+          但未確認有冇使用正式 BRD、Functional Specification、
+          Traceability Matrix 或 UAT Sign-off。
+        </div>
+
       </div>
+    </details>
 
-      <div class="label">Data Modelling Concepts</div>
+    <!-- 現代 Approach -->
 
-      <ul>
-        <li>Entity Relationships</li>
-        <li>Data Mapping</li>
-        <li>Source-to-Target Mapping</li>
-        <li>Join Logic Design</li>
-        <li>Business Data Structures</li>
-      </ul>
+    <details>
+      <summary>現代 Approach</summary>
 
-      <div class="label">Skills Demonstrated</div>
+      <div class="content">
 
-      <div class="badges">
-        <span class="badge">Data Modelling</span>
-        <span class="badge">Data Mapping</span>
-        <span class="badge">Source-to-Target Mapping</span>
-        <span class="badge">Join Logic</span>
-        <span class="badge">Business Rules</span>
+        <div class="flow">
+          <span>Business Problem</span>
+          <b>→</b>
+          <span>User Stories</span>
+          <b>→</b>
+          <span>Acceptance Criteria</span>
+          <b>→</b>
+          <span>Prioritised Backlog</span>
+          <b>→</b>
+          <span>Version-controlled Development</span>
+          <b>→</b>
+          <span>Automated Testing</span>
+          <b>→</b>
+          <span>UAT</span>
+          <b>→</b>
+          <span>Controlled Release</span>
+          <b>→</b>
+          <span>Monitoring</span>
+        </div>
+
+        <ul>
+          <li>使用 Jira、Azure DevOps 或同類工具管理 Backlog</li>
+          <li>使用 Git 管理 Code、Documentation 同版本</li>
+          <li>將 Acceptance Criteria 同 Test Cases 連結</li>
+          <li>建立 Development、UAT 同 Production 環境</li>
+          <li>透過 CI/CD 控制測試及部署</li>
+          <li>Go-live 後監控 Error、Usage 同 User Feedback</li>
+        </ul>
+
       </div>
+    </details>
 
+    <div class="label">能力總結</div>
+
+    <div class="badges">
+      <span class="badge">Business Analysis</span>
+      <span class="badge">Requirements Gathering</span>
+      <span class="badge">Solution Design</span>
+      <span class="badge">SDLC</span>
+      <span class="badge">Agile Delivery</span>
+      <span class="badge">UAT</span>
+      <span class="badge">Training</span>
+      <span class="badge">User Enablement</span>
     </div>
-  </details>
 
-  <details class="story" open>
-    <summary>Story 4 - End-to-End Commission Pipeline</summary>
+  </div>
+</details>
 
-    <div class="content">
 
-      <div class="label">Nature</div>
-      <div class="note">Data Flow Design & Automation</div>
+<!-- ===================================================== -->
+<!-- FWD STORY 2 - DATA GOVERNANCE & SSOT                  -->
+<!-- ===================================================== -->
 
-      <div class="label">Pipeline</div>
+<details class="story" open>
+  <summary>Story 2 - Insurance Data Governance & SSOT
+（資料混亂 → 建立可信資料）</summary>
 
-      <div class="flow">
-        <span>Source Files</span>
-        <b>→</b>
-        <span>VBA Collection</span>
-        <b>→</b>
-        <span>Power Query Integration</span>
-        <b>→</b>
-        <span>Data Mapping</span>
-        <b>→</b>
-        <span>M Code Transformation</span>
-        <b>→</b>
-        <span>DAX Business Rules</span>
-        <b>→</b>
-        <span>SSOT Dataset</span>
-        <b>→</b>
-        <span>VBA Distribution</span>
-        <b>→</b>
-        <span>Business Users</span>
-      </div>
+  <div class="content">
 
-      <div class="label">Modern Pipeline Layers</div>
+    <div class="label">核心問題</div>
 
-      <div class="flow">
-        <span>Ingestion</span>
-        <b>→</b>
-        <span>Integration</span>
-        <b>→</b>
-        <span>Transformation</span>
-        <b>→</b>
-        <span>Business Logic</span>
-        <b>→</b>
-        <span>Governance</span>
-        <b>→</b>
-        <span>Delivery</span>
-      </div>
-
-      <div class="label">Skills Demonstrated</div>
-
-      <div class="badges">
-        <span class="badge">Data Flow Design</span>
-        <span class="badge">ETL</span>
-        <span class="badge">Automation</span>
-        <span class="badge">Data Integration</span>
-        <span class="badge">Data Transformation</span>
-        <span class="badge">Reporting Delivery</span>
-      </div>
-
+    <div class="note">
+      我如何將分散喺不同檔案、系統輸出同人手報表嘅保險資料，
+      整理成一份統一、可信、可追蹤嘅資料集？
     </div>
-  </details>
+
+    <div class="label">背景</div>
+
+    <div class="note">
+      資料分散喺 Master Tables、Transaction Records、
+      Recalculation Records、System Outputs 同 User-maintained Files。
+
+      不同來源使用不同格式同結構，部分資料由人手輸入。
+
+      同一個 Transaction 可能有多次處理或 Recalculation，
+      形成多條互相獨立嘅紀錄。
+
+      Business Users 難以判斷：
+
+      - 邊條紀錄最早
+      - 邊條紀錄最新
+      - 中間發生過幾多次改動
+      - 累計金額係幾多
+      - 邊個結果應該用於 Reporting
+    </div>
+
+    <!-- 當年做法 -->
+
+    <details open>
+      <summary>當年實際做法</summary>
+
+      <div class="content">
+
+        <div class="label">資料來源整理</div>
+
+        <ul>
+          <li>識別 Master Data、Transaction Data 同 Recalculation Data</li>
+          <li>收集 Server Files、System Outputs 同 User-maintained Reports</li>
+          <li>了解不同資料來源嘅用途同大致業務含義</li>
+          <li>與 Users 核對資料及取得共識</li>
+        </ul>
+
+        <div class="label">資料處理</div>
+
+        <div class="flow">
+          <span>收集來源資料</span>
+          <b>→</b>
+          <span>Preprocessing</span>
+          <b>→</b>
+          <span>清洗人工輸入</span>
+          <b>→</b>
+          <span>統一格式</span>
+          <b>→</b>
+          <span>Transaction Sequencing</span>
+          <b>→</b>
+          <span>Running Total</span>
+          <b>→</b>
+          <span>Central Dataset</span>
+        </div>
+
+        <ul>
+          <li>使用 VBA 收集不同來源檔案</li>
+          <li>處理 Missing Data、格式差異同人手輸入問題</li>
+          <li>統一欄位格式及資料結構</li>
+          <li>建立 Transaction 嘅先後次序</li>
+          <li>識別最新紀錄</li>
+          <li>新增 Running Total 同 Cumulative Amount</li>
+          <li>建立供 Prototype 同 Reporting 使用嘅中央資料集</li>
+        </ul>
+
+        <div class="label">成果</div>
+
+        <div class="flow">
+          <span>互相獨立嘅 Records</span>
+          <b>→</b>
+          <span>完整 Transaction History</span>
+          <b>→</b>
+          <span>最新狀態</span>
+          <b>→</b>
+          <span>累積金額</span>
+          <b>→</b>
+          <span>可信 Reporting Result</span>
+        </div>
+
+      </div>
+    </details>
+
+    <!-- 正確做法 -->
+
+    <details>
+      <summary>正確做法與可以修正嘅地方</summary>
+
+      <div class="content">
+
+        <div class="label">當年方向正確嘅部分</div>
+
+        <ul>
+          <li>先整理資料，再開發 Prototype</li>
+          <li>識別同整合多個資料來源</li>
+          <li>處理人工輸入及格式不一致問題</li>
+          <li>建立 Transaction Sequence 同 Derived Calculations</li>
+          <li>建立中央可信資料集</li>
+          <li>與 Business Users 核對結果</li>
+        </ul>
+
+        <div class="label">完整 SSOT 正常應補充嘅 Deliverables</div>
+
+        <ul>
+          <li>Source Inventory：來源、用途、Owner、Refresh Frequency</li>
+          <li>Data Profiling Results：Null、Duplicate、格式同數據類型問題</li>
+          <li>Business Definitions：每個重要欄位同計算嘅業務定義</li>
+          <li>Data Quality Rules：Mandatory Fields、Uniqueness、Validity</li>
+          <li>Reconciliation Report：來源同 SSOT 嘅 Row Count 及 Amount 對數</li>
+          <li>Exception Log：記錄 Unmatched、Invalid 或 Conflicting Records</li>
+          <li>Data Dictionary：欄位名稱、定義、類型、來源同計算邏輯</li>
+          <li>Ownership Model：邊個維護 Source、Rules、Mappings 同 Exceptions</li>
+        </ul>
+
+        <div class="note">
+          待核實：
+
+          當年確定有做收集、清洗、標準化、Transaction Sequencing、
+          Running Total 同 Central Dataset。
+
+          但未確認有冇正式建立 Source Inventory、Data Dictionary、
+          Exception Log、Reconciliation Report 同 Ownership Matrix。
+        </div>
+
+      </div>
+    </details>
+
+    <!-- 現代 Approach -->
+
+    <details>
+      <summary>現代 Approach</summary>
+
+      <div class="content">
+
+        <div class="flow">
+          <span>Raw Sources</span>
+          <b>→</b>
+          <span>Bronze / Raw Layer</span>
+          <b>→</b>
+          <span>Silver / Validated Layer</span>
+          <b>→</b>
+          <span>Business Rules</span>
+          <b>→</b>
+          <span>Gold / Curated Dataset</span>
+          <b>→</b>
+          <span>Reporting & Analytics</span>
+        </div>
+
+        <ul>
+          <li>Raw Layer 保留完整原始資料及 Source Metadata</li>
+          <li>Validated Layer 處理 Schema、Null、Duplicate 同標準化</li>
+          <li>Curated Layer 套用 Business Rules、History 同 Reporting Logic</li>
+          <li>使用 Data Catalogue 記錄 Definitions、Ownership 同 Lineage</li>
+          <li>使用自動化 Data-quality Tests 驗證完整性、一致性同唯一性</li>
+          <li>將 Exceptions 放入 Quarantine Table，而唔係靜靜刪除</li>
+          <li>建立 Source-to-Target Reconciliation 同 Pipeline Monitoring</li>
+        </ul>
+
+        <div class="note">
+          現代做法同當年核心概念一致：
+
+          都係將 Raw、混亂及不一致嘅資料，
+          逐步整理成乾淨、可信及可以供業務使用嘅資料產品。
+
+          最大分別係現代架構會將 Raw、Validated 同 Business-ready
+          資料分層管理，並加入更正式嘅 Lineage、Testing 同 Ownership。
+        </div>
+
+      </div>
+    </details>
+
+    <div class="label">能力總結</div>
+
+    <div class="badges">
+      <span class="badge">Data Governance</span>
+      <span class="badge">SSOT Design</span>
+      <span class="badge">Data Standardisation</span>
+      <span class="badge">Data Quality</span>
+      <span class="badge">Business Rules</span>
+      <span class="badge">Transaction History</span>
+      <span class="badge">Reconciliation</span>
+    </div>
+
+  </div>
+</details>
+
+
+<!-- ===================================================== -->
+<!-- FWD STORY 3 - DATA MODELLING & MAPPING                -->
+<!-- ===================================================== -->
+
+<details class="story" open>
+  <summary>Story 3 - Insurance Data Integration &
+Business Data Modelling
+</summary>
+
+  <div class="content">
+
+    <div class="label">核心問題</div>
+
+    <div class="note">
+      我如何理解不同保險資料之間嘅關係，
+      並將不同來源整合成一致嘅資料結構？
+    </div>
+
+    <div class="label">背景</div>
+
+    <div class="note">
+      不同來源包含 Master Data、Customer-related Data、
+      Transaction Records 同 Recalculation Records。
+
+      問題唔只係欄位名稱唔同，
+      而係要理解每條 Record 代表咩、
+      邊啲 Records 屬於同一個 Transaction，
+      以及如何建立完整嘅 Transaction History。
+    </div>
+
+    <!-- 當年做法 -->
+
+    <details open>
+      <summary>當年實際做法</summary>
+
+      <div class="content">
+
+        <div class="label">Practical Data Modelling</div>
+
+        <div class="flow">
+          <span>識別資料實體</span>
+          <b>→</b>
+          <span>確認 Business Keys</span>
+          <b>→</b>
+          <span>理解 Relationships</span>
+          <b>→</b>
+          <span>建立 Mappings</span>
+          <b>→</b>
+          <span>設計 Join Logic</span>
+          <b>→</b>
+          <span>套用 Business Rules</span>
+          <b>→</b>
+          <span>建立 Reporting Dataset</span>
+        </div>
+
+        <ul>
+          <li>識別不同來源代表嘅 Business Objects</li>
+          <li>確認可用於連結紀錄嘅 Business Keys</li>
+          <li>判斷哪些 Records 屬於同一個 Transaction</li>
+          <li>區分原始紀錄同後續 Recalculation Events</li>
+          <li>建立 Source-to-Target Mapping</li>
+          <li>標準化欄位名稱、格式同 Code Values</li>
+          <li>設計 Master Data 同 Transaction Data 之間嘅 Join Logic</li>
+          <li>建立 Transaction Sequence、Latest Record 同 Derived Fields</li>
+          <li>驗證 Unmatched、Duplicate 或 Incomplete Records</li>
+        </ul>
+
+        <div class="note">
+          呢個屬於 Practical Business Data Modelling。
+
+          當年未必有建立正式 Enterprise ERD，
+          但實際需要理解 Entities、Keys、Relationships、
+          Record Grain、Mappings 同 Join Logic。
+        </div>
+
+      </div>
+    </details>
+
+    <!-- 正確做法 -->
+
+    <details>
+      <summary>正確做法與可以修正嘅地方</summary>
+
+      <div class="content">
+
+        <div class="label">當年方向正確嘅部分</div>
+
+        <ul>
+          <li>先理解資料代表嘅業務對象，再進行整合</li>
+          <li>識別 Business Keys 同 Record Relationships</li>
+          <li>建立 Source-to-Target Mapping</li>
+          <li>定義 Join、Sequence 同 Calculation Logic</li>
+          <li>驗證 Unmatched 同 Duplicate Records</li>
+        </ul>
+
+        <div class="label">正確建模時應該明確記錄</div>
+
+        <ul>
+          <li>Business Entities：每個主要資料對象係咩</li>
+          <li>Record Grain：每一行代表咩業務事件</li>
+          <li>Business Keys：點樣唯一識別同一個 Record 或 Event</li>
+          <li>Relationships：一對一、一對多或多對多</li>
+          <li>Cardinality：Join 後會唔會產生 Duplicate Records</li>
+          <li>Source-to-Target Rules：來源欄位點轉成 Target Fields</li>
+          <li>History Rules：點保存原始、修改及最新版本</li>
+          <li>Exception Rules：Unmatched Records 點處理</li>
+        </ul>
+
+        <div class="note">
+          待核實：
+
+          目前可以確認做過 Practical Mapping、Relationships、
+          Transaction Sequencing 同 Central Dataset。
+
+          但確切 Business Keys、每個 Table 嘅 Record Grain、
+          Relationship Cardinality 同正式 Mapping Document，
+          仲需要根據舊檔案或記憶進一步核實。
+        </div>
+
+      </div>
+    </details>
+
+    <!-- 現代 Approach -->
+
+    <details>
+      <summary>現代 Approach</summary>
+
+      <div class="content">
+
+        <div class="flow">
+          <span>Conceptual Model</span>
+          <b>→</b>
+          <span>Logical Model</span>
+          <b>→</b>
+          <span>Physical Model</span>
+          <b>→</b>
+          <span>Transformation Models</span>
+          <b>→</b>
+          <span>Semantic Model</span>
+        </div>
+
+        <ul>
+          <li>Conceptual Model：定義主要 Business Entities 同 Relationships</li>
+          <li>Logical Model：定義 Attributes、Keys、Grain 同 Cardinality</li>
+          <li>Physical Model：落實 Tables、Columns、Data Types 同 Constraints</li>
+          <li>Transformation Models：將 Raw Sources 轉成 Conformed Entities</li>
+          <li>Semantic Model：為 Reporting 同 Analytics 提供統一 Business Definitions</li>
+          <li>建立 Data Contracts，控制 Schema、Required Fields 同 Change Rules</li>
+          <li>使用 Version-controlled Mapping 同 Transformation Logic</li>
+          <li>加入 Relationship、Uniqueness、Referential Integrity 同 Reconciliation Tests</li>
+        </ul>
+
+      </div>
+    </details>
+
+    <div class="label">能力總結</div>
+
+    <div class="badges">
+      <span class="badge">Practical Data Modelling</span>
+      <span class="badge">Source-to-Target Mapping</span>
+      <span class="badge">Business Keys</span>
+      <span class="badge">Record Grain</span>
+      <span class="badge">Join Logic</span>
+      <span class="badge">Transaction Modelling</span>
+      <span class="badge">Exception Handling</span>
+    </div>
+
+  </div>
+</details>
+
+
+<!-- ===================================================== -->
+<!-- FWD STORY 4 - END-TO-END DATA PIPELINE                -->
+<!-- ===================================================== -->
+
+<details class="story" open>
+  <summary>Story 4 - Insurance Data Product Pipeline &
+Automation</summary>
+
+  <div class="content">
+
+    <div class="label">核心問題</div>
+
+    <div class="note">
+      我如何將分散嘅來源資料，
+      透過收集、清洗、整合、轉換、驗證同 Reporting，
+      變成一個可以持續俾 Business Users 使用嘅數據產品？
+    </div>
+
+    <div class="label">背景</div>
+
+    <div class="note">
+      Prototype 需要嘅唔只係最後一份 Report。
+
+      背後需要一條可重複執行嘅 Workflow，
+      將不同來源資料收集、處理、整合、計算、驗證，
+      再交付俾 Business Users。
+    </div>
+
+    <!-- 當年做法 -->
+
+    <details open>
+      <summary>當年實際做法</summary>
+
+      <div class="content">
+
+        <div class="label">Historical Pipeline</div>
+
+        <div class="flow">
+          <span>Source Files</span>
+          <b>→</b>
+          <span>VBA Collection</span>
+          <b>→</b>
+          <span>Preprocessing</span>
+          <b>→</b>
+          <span>Power Query Integration</span>
+          <b>→</b>
+          <span>M Code Transformation</span>
+          <b>→</b>
+          <span>Business Rules</span>
+          <b>→</b>
+          <span>DAX Calculations</span>
+          <b>→</b>
+          <span>SSOT Dataset</span>
+          <b>→</b>
+          <span>Reporting</span>
+          <b>→</b>
+          <span>Business Users</span>
+        </div>
+
+        <div class="label">實際工作</div>
+
+        <ul>
+          <li>使用 VBA 觸發及自動化 File Collection</li>
+          <li>處理不完整、格式不一致同人手輸入嘅資料</li>
+          <li>使用 Power Query 整合不同來源</li>
+          <li>使用 M Code 處理 Standardisation 同 Transformation</li>
+          <li>建立 Mapping、Join 同 Business-rule Logic</li>
+          <li>使用 Calculated Fields 或 DAX 處理 Running Total 同報表計算</li>
+          <li>建立中央 Dataset 供 Prototype 同 Reporting 使用</li>
+          <li>自動化部分 Reporting 同 Output Distribution</li>
+          <li>支援 Testing、UAT、Training、Deployment 同 User Support</li>
+        </ul>
+
+        <div class="label">Validation Flow</div>
+
+        <div class="flow">
+          <span>Input Validation</span>
+          <b>→</b>
+          <span>Transformation Validation</span>
+          <b>→</b>
+          <span>Mapping Validation</span>
+          <b>→</b>
+          <span>Calculation Validation</span>
+          <b>→</b>
+          <span>Output Reconciliation</span>
+          <b>→</b>
+          <span>User Validation</span>
+        </div>
+
+      </div>
+    </details>
+
+    <!-- 正確做法 -->
+
+    <details>
+      <summary>正確做法與可以修正嘅地方</summary>
+
+      <div class="content">
+
+        <div class="label">當年方向正確嘅部分</div>
+
+        <ul>
+          <li>自動化 Source File Collection</li>
+          <li>將 Collection、Transformation 同 Reporting 串成完整流程</li>
+          <li>先建立統一資料，再進行 Calculation 同 Reporting</li>
+          <li>對 Mapping、Calculation 同 Output 進行 Validation</li>
+          <li>由 Prototype Delivery 延伸到 UAT、Training 同 Support</li>
+        </ul>
+
+        <div class="label">一條完整 Production Pipeline 應該補強</div>
+
+        <ul>
+          <li>Raw Data Retention：保存未修改嘅來源資料</li>
+          <li>Incremental Loading：只載入新增或改動資料</li>
+          <li>Idempotency：同一批資料重跑唔應造成 Duplicate</li>
+          <li>Error Handling：失敗時要記錄、停止或隔離錯誤資料</li>
+          <li>Logging：記錄開始時間、完成時間、Row Count 同 Error</li>
+          <li>Restart / Recovery：Job 失敗後可以由指定位置重跑</li>
+          <li>Schema Validation：防止來源欄位改動破壞 Downstream</li>
+          <li>Automated Reconciliation：自動比較 Source 同 Output Totals</li>
+          <li>Version Control：管理 VBA、M Code、DAX 同 Documentation</li>
+          <li>Monitoring & Alerting：Pipeline 失敗或 Data-quality 異常時通知 Owner</li>
+        </ul>
+
+        <div class="note">
+          待核實：
+
+          現有資料確認你參與咗 Collection、Preprocessing、
+          Transformation、Business Rules、Validation、Reporting 同 User Support。
+
+          但 Scheduling、Logging、Restart Handling、Version Control、
+          Automated Alerting 同正式 SLA 暫時未有足夠證據。
+        </div>
+
+      </div>
+    </details>
+
+    <!-- 現代 Approach -->
+
+    <details>
+      <summary>現代 Approach</summary>
+
+      <div class="content">
+
+        <div class="flow">
+          <span>Source Systems</span>
+          <b>→</b>
+          <span>Orchestrated Ingestion</span>
+          <b>→</b>
+          <span>Raw Storage</span>
+          <b>→</b>
+          <span>Validated Transformation</span>
+          <b>→</b>
+          <span>Business-rule Models</span>
+          <b>→</b>
+          <span>Curated SSOT</span>
+          <b>→</b>
+          <span>Semantic Layer</span>
+          <b>→</b>
+          <span>BI / Data Product</span>
+          <b>→</b>
+          <span>Monitoring</span>
+        </div>
+
+        <div class="label">現代技術示例</div>
+
+        <ul>
+          <li>Ingestion：Azure Data Factory、Fabric Data Factory 或同類 Orchestrator</li>
+          <li>Raw Storage：Data Lake、Lakehouse 或 Cloud Object Storage</li>
+          <li>Transformation：SQL、Spark、Databricks 或 dbt-style Models</li>
+          <li>Data Quality：Automated Schema、Null、Uniqueness 同 Reconciliation Tests</li>
+          <li>Curated Layer：Warehouse / Lakehouse Business-ready Tables</li>
+          <li>Semantic Layer：Power BI Semantic Model 或受控 Business Metrics</li>
+          <li>Delivery：Dashboard、Application、API 或 Scheduled Output</li>
+          <li>Operations：Monitoring、Alerting、Lineage、Logging 同 Controlled Deployment</li>
+        </ul>
+
+        <div class="label">新舊做法對照</div>
+
+        <div class="flow">
+          <span>VBA Collection</span>
+          <b>→</b>
+          <span>Managed Ingestion</span>
+          <b>→</b>
+          <span>Power Query / M</span>
+          <b>→</b>
+          <span>Version-controlled Transformation</span>
+          <b>→</b>
+          <span>DAX / Report Logic</span>
+          <b>→</b>
+          <span>Governed Semantic Layer</span>
+        </div>
+
+        <div class="note">
+          當年同現代做法嘅核心思想其實一致：
+
+          Source Data
+          → Integration
+          → Transformation
+          → Business Rules
+          → Validation
+          → Trusted Dataset
+          → Business Delivery
+
+          現代做法主要增加可擴展性、版本控制、自動測試、
+          監控、Lineage 同部署管理。
+        </div>
+
+      </div>
+    </details>
+
+    <div class="label">能力總結</div>
+
+    <div class="badges">
+      <span class="badge">End-to-End Data Pipeline</span>
+      <span class="badge">ETL</span>
+      <span class="badge">Data Integration</span>
+      <span class="badge">Data Transformation</span>
+      <span class="badge">Business-rule Implementation</span>
+      <span class="badge">Data Validation</span>
+      <span class="badge">Reporting Delivery</span>
+      <span class="badge">User Support</span>
+    </div>
+
+  </div>
+</details>
 
   <details open>
     <summary>Interview Mapping</summary>
@@ -761,6 +2465,8 @@ Last Updated: 2026-10-01
   </details>
 
 </details>
+
+
 
 <details open>
   <summary>Uni-China (Market) Management Ltd.</summary>
@@ -2234,6 +3940,7 @@ Last Updated: 2026-10-01
 <span class="badge">Machine Learning</span>
 </div>
 
+
 <div class="label">Technology</div>
 
 <div class="badges">
@@ -2253,10 +3960,152 @@ Last Updated: 2026-10-01
 <span class="badge">REST APIs</span>
 </div>
 
-</div>
 </details>
 
+<details open>
+  <summary>Career Direction & Positioning</summary>
 
+  <details open>
+    <summary>Current Position</summary>
+
+    <div class="content">
+
+      <div class="label">Professional Identity</div>
+
+      <div class="note">
+        Data & Analytics Professional
+      </div>
+
+      <div class="label">Current Strengths</div>
+
+      <ul>
+        <li>Finance Analytics</li>
+        <li>Operational Analytics</li>
+        <li>Data Governance</li>
+        <li>Data Modelling</li>
+        <li>Business Analysis</li>
+        <li>Data Transformation</li>
+        <li>Decision Support Analytics</li>
+      </ul>
+
+      <div class="label">Applied Data Science Capabilities</div>
+
+      <ul>
+        <li>Predictive Analytics</li>
+        <li>Risk Analytics</li>
+        <li>Fraud Analytics</li>
+        <li>Natural Language Processing (NLP)</li>
+        <li>Machine Learning</li>
+      </ul>
+
+    </div>
+
+  </details>
+
+  <details open>
+    <summary>Ultimate Goal</summary>
+
+    <div class="content">
+
+      <div class="label">Target Positioning</div>
+
+      <div class="note">
+        Applied Data Scientist (BFSI Domain)
+      </div>
+
+      <div class="label">Target Domains</div>
+
+      <ul>
+        <li>Banking</li>
+        <li>Insurance</li>
+        <li>Risk Management</li>
+        <li>Fraud Analytics</li>
+        <li>Financial Analytics</li>
+      </ul>
+
+    </div>
+
+  </details>
+
+  <details open>
+    <summary>Career Roadmap</summary>
+
+    <div class="content">
+
+      <div class="flow">
+
+        <span>Finance Analytics</span>
+        <b>→</b>
+
+        <span>Data Governance</span>
+        <b>→</b>
+
+        <span>Operational Analytics</span>
+        <b>→</b>
+
+        <span>Applied Data Science</span>
+        <b>→</b>
+
+        <span>BFSI Applied Data Scientist</span>
+
+      </div>
+
+    </div>
+
+  </details>
+
+  <details open>
+    <summary>Target Roles (Next 2-5 Years)</summary>
+
+    <div class="content">
+
+      <ul>
+
+        <li>Risk Analytics</li>
+
+        <li>Fraud Analytics</li>
+
+        <li>Decision Science</li>
+
+        <li>Insurance Analytics</li>
+
+        <li>Financial Analytics</li>
+
+        <li>Applied Data Scientist (BFSI)</li>
+
+      </ul>
+
+    </div>
+
+  </details>
+
+  <details open>
+    <summary>Roles to Avoid or Limit</summary>
+
+    <div class="content">
+
+      <ul>
+
+        <li>Pure Reporting Analyst</li>
+
+        <li>Pure Dashboard Developer</li>
+
+        <li>Pure Documentation Business Analyst</li>
+
+        <li>Pure Governance Policy Roles</li>
+
+      </ul>
+
+      <div class="note">
+        These roles can still be useful if they provide exposure to Analytics,
+        Risk, Fraud, Machine Learning or Data Science initiatives.
+      </div>
+
+    </div>
+
+  </details>
+
+</details>
 </div>
 <script>
 function setAll(open){document.querySelectorAll('details').forEach(d=>d.open=open)}
