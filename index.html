@@ -2470,27 +2470,18 @@ Automation</summary>
 
 <summary>Data Domain Exposure</summary>
 
-<div class="content">
-
-<div class="label">FWD Insurance</div>
-
-<ul>
-
-<li>Customer Master Data</li>
-
-<li>Transaction Data</li>
-
-<li>Recalculation Records</li>
-
-<li>Business Reference Data</li>
-
-<li>Insurance Reporting Data</li>
-
-<li>User-maintained Business Data</li>
-
-<li>Calculation Results</li>
-
-</ul>
+<div class="subsection">
+        <h3>FWD Insurance</h3>
+        <ul>
+            <li><strong>Agent Master & Profile Dataset</strong> (camaid_agent_no, camaid_sort_key, camaid_date_join, camaid_grade, camgpr_grade, camaip_pay_out_rate, camgpr_per_pkg, NAME, GI_Indicator) — 記錄代理人基本資料、入職日期、職級及所屬 Manager。</li>
+            <li><strong>Commission & Earnings Dataset</strong> (PAY_LFYC, PAY_LRC, PAY_NAB, PAY_QPB, PAY_OVR, PAY_CB, PAY_MDB, PAY_PB, 及對應 _ADJ / _TOT 欄位) — 記錄各類保險佣金（首年、續期）、超額獎金與各項表現獎金。</li>
+            <li><strong>Financial Adjustment & Net Pay Dataset</strong> (PAY_EARN_TOT, PAY_WTHLD, PAY_DCT_TOT, PAY_NET_PAY, PAY_NET_CF) — 記錄扣除額、預扣款項、最終淨支薪金額及下期結轉金額。</li>
+            <li><strong>Account Balance Dataset</strong> (ACC_OPEN_BAL, ACC_NAB_PAID, ACC_CLOSE_BAL, ACC_CREDIT_BAL) — 追蹤代理人戶口期初結余、已付金額、期末結余及長期累積賬目。</li>
+            <li><strong>Production & Performance Metrics Dataset</strong> (NB_AFYC_CM, _12M, _YTD, LAPSED_AFYC, REIN_AFYC, NAFYC_CM, NET_CASE_CM, LIFE_FYC_CM) — 衡量代理人業績嘅保費與產能指標。</li>
+            <li><strong>Banking & Autopay Dataset</strong> (AUTOPAY_IND, camaba_bank, camaba_branch, camaba_acno, camaba_acc_type, camaba_acc_name) — 記錄代理人銀行過數資料及自動轉賬指示。</li>
+            <li><strong>Training Allowance & Progress Tracking Data</strong> (Training Allowance Report, Course Completion Status, FLDP Progress) — 追蹤代理人培訓進度與津貼發放情況。</li>
+        </ul>
+    </div>
 
 <div class="label">Ralph Lauren</div>
 
